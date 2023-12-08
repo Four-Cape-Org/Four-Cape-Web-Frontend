@@ -15,25 +15,25 @@ const Navbar = () => {
 
         </div>
         <div className="right flex">
-            <ul className="flex justify-center items-center mx-[20px]">
+            <ul className="flex justify-center items-center mx-[55px]">
                 <li className='mx-[10px]'>
-                    <NavLink className="p-[10px] text-[17px]" to="/">Home</NavLink>
+                    <NavLink className="p-[10px] text-[17px] font-rubik" to="/">Home</NavLink>
                 </li>
                 <li className='mx-[10px]'>
-                    <NavLink className="p-[10px] text-[17px]" to="/about">About</NavLink>
+                    <NavLink className="p-[10px] text-[17px] font-rubik" to="/about">About <i class="fa-solid fa-chevron-down"></i></NavLink>
                 </li>
                 <li className='mx-[10px]'>
-                    <NavLink className="p-[10px] text-[17px]" to="/services">Services</NavLink>
+                    <NavLink className="p-[10px] text-[17px] font-rubik" to="/services">Services</NavLink>
                 </li>
                 <li className='mx-[10px]'>
-                    <NavLink className="p-[10px] text-[17px]" to="/blogs">Blogs</NavLink>
+                    <NavLink className="p-[10px] text-[17px] font-rubik" to="/blogs">Blogs</NavLink>
                 </li>
                 <li className='mx-[10px]'>
-                    <NavLink className="p-[10px] text-[17px]" to="/contacts">Contact</NavLink>
+                    <NavLink className="p-[10px] text-[17px] font-rubik" to="/contacts">Contact</NavLink>
                 </li>
             </ul>
 
-            <button className='px-[20px] py-[12px] rounded-[50px] border-[2px] border-[black] text-[white] bg-[black] font-semibold text-[13px] hover:bg-[transparent] hover:text-[black] hover:shadow-lg hover:shadow-gray-500/40 transition-all duration-500'>LETS CONNECT</button>
+            <button className='px-[20px] py-[12px] rounded-[50px] border-[2px] border-[black] text-[white] bg-[black] font-semibold text-[11px] hover:bg-[transparent] hover:text-[black] hover:shadow-lg  font-rubik hover:shadow-gray-500/40 transition-all duration-500 hover:translate-y-[-4px]'>LETS CONNECT</button>
         </div>
 
     </nav>
