@@ -3,7 +3,7 @@ import React from 'react'
 const Bubbles = (props) => {
 
    let bubbleStyle = {
-        position: 'fixed',
+        position: 'absolute',
         top: props.top,
         left: props.left,
         width: props.dimension,
