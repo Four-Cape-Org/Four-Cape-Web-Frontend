@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar'
 import Bubbles from '../Bubbles'
+import ServiceCards from './ServiceCards'
 import Rocket from '../../assets/img/home/rocket.svg'
 import Success from '../../assets/img/home/success.png'
 import Thinking from '../../assets/img/home/thinking.png'
