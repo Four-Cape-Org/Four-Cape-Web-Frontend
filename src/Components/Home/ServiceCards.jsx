@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // Image imports
-import upperWave from '../../assets/img/wave_upper.svg'
-import lowerWave from '../../assets/img/wave_lower.svg'
+import upperWave from '../../assets/img/home/wave_upper.svg'
+import lowerWave from '../../assets/img/home/wave_lower.svg'
 
 const ServiceCards = () => {
 
