@@ -10,7 +10,7 @@ const Bubbles = (props) => {
         height: props.dimension,
         borderRadius: '50%',
         backgroundColor: props.color,
-        zIndex: '0',
+        zIndex: '1',
    }
     
   return (
