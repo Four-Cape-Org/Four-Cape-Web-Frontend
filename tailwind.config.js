@@ -12,5 +12,17 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+
+    // this is a custom utility for letter spacing 
+    function ({ addUtilities }) {
+      const newUtilities = {};
+
+      for (let i = 1; i <= 100; i++) {
+        newUtilities[`.tracking-${i}`] = { 'letter-spacing': `${i / 100}em` };
+      }
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 }
