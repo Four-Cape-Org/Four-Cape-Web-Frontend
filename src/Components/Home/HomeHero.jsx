@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 // Image imports
 import Rocket from '../../assets/img/home/rocket.svg'
@@ -11,40 +12,31 @@ import DashedLine from '../../assets/img/home/dashedLine.png'
 
 const HomeHero = () => {
   return (
-    <div className='hero h-screen'>
+    <div className='flex items-center hero h-screen'>
 
-        <div className='left left-[41px]'>
-          <p className='w-[560px] h-[42px] top-[280px] left-[49px] font-inter font-normal text-[15px] leading-[18.15px] tracking-62 content-center bg-transparent absolute'>Your Vision | Our Expertise</p>
-          <main className='w-[769px] h-[236px] top-[313px] left-[39px] font-inter font-semibold text-[90px] bg-transparent absolute'>Building Brands, Crafting Success</main>
-          <p className='w-[544px] h-[78px] top-[604px] left-[41px] font-inter font-normal text-[32px] tracking-normal text-gray-700 text-opacity-100 bg-transparent absolute'>We help you make your brand story more powerful</p>
-
-          <button className='px-[20px] py-[12px] left-[42px] top-[754px] rounded-[50px] border-[2px] border-[black] text-[white] bg-[black] font-semibold text-[11px] hover:bg-[transparent] hover:text-[black] hover:shadow-lg font-rubik hover:shadow-gray-500/40 transition-all duration-500 absolute'>CONNECT TODAY</button>
+        <div className='flex flex-col justify-center items-start p-[30px]'>
+          <p className=' top-[280px] left-[49px] font-inter text-[15px] tracking-62'>Your Vision | Our Expertise</p>
+          <h1 className='w-[9em] top-[313px] left-[39px] font-inter font-semibold text-[80px]'>Building Brands, Crafting Success</h1>
+          <p className='w-[17em] top-[604px] left-[41px] my-[30px] font-inter text-[30px] text-gray-700 text-opacity-100'>We help you make your brand story more powerful</p>
+          <Link className='inline-block my-[15px] px-[20px] py-[12px] left-[42px] top-[754px] rounded-[50px] border-[2px] border-[black] text-[white] bg-[black] font-semibold text-[11px] hover:bg-[transparent] hover:text-[black] hover:shadow-lg font-rubik hover:shadow-gray-500/40 transition-all duration-500'>CONNECT TODAY</Link>
         </div>
 
-        <div className='right'>
-          <div className='rocket'>
+        <div className='rocket'>
             <img src={Rocket} alt="Rocket" className='w-[192.11px] h-[184.68px] top-[135px] absolute left-[650px] bg-transparent'/>
-          </div>
+        </div>
 
-          <div className='success'>
-            <img src={Success} alt="Success" className='w-[262px] h-[248px] top-[152px] left-[1000px] rounded-tl-[0px] rounded-tr-[68px] rounded-bl-[70px] rounded-br-[68px] absolute bg-opacity-25 hover:bg-violet-500 shadow-md shadow-transparent bg-transparent' />
-          </div>
+        <div className='relative w-[60%] h-screen'>
 
-          <div className='thinking'>
-            <img src={Thinking} alt="Thinking" className='w-[285px] h-[269px] top-[472px] left-[1166px] rounded-tl-[64px] rounded-tr-[0px] rounded-bl-[64px] rounded-br-[0px] absolute shadow-md shadow-transparent bg-transparent' />
-          </div>
+            <img src={Success} alt="Success" className='absolute h-[22%] z-[4] top-[0%] right-[22%] bg-opacity-25 shadow-md shadow-transparent' />
 
-          <div className='struggle z-20'>
-            <img src={Struggle} alt="Struggle" className='w-[272px] h-[253px] top-[679px] left-[818px] rounded-tl-[61px] rounded-tr-[0px] rounded-bl-[60px] rounded-br-[0px] absolute shadow-md shadow-transparent bg-transparent' />
-          </div>
+            <img src={Thinking} alt="Thinking" className='absolute h-[22%] z-[4] top-[29%] right-[16%] shadow-md shadow-transparent' />
 
-          <div className='bulb '>
-            <img src={Bulb} alt="Bulb" className='w-[109px] h-[121px] top-[658.55px] left-[659px] absolute bg-transparent' />
-          </div>
+            <img src={Struggle} alt="Struggle" className='absolute h-[22%] z-[4] top-[52%] left-[12%] shadow-md shadow-transparent' />
 
-          <div className='dashedLine z-0'>
-            <img src={DashedLine} alt="Dashed Line" className='top-[308px] left-[686px]  text-gray-700 absolute bg-transparent' />
-          </div>
+            <img src={Bulb} alt="Bulb" className='absolute h-[12%] z-[3] top-[50%] left-[-6%]' />
+
+            <img src={DashedLine} alt="Dashed Line" className='absolute top-[40%] left-[0%] translate-y-[-50%] z-[3] w-[90%] h-[60%] text-gray-700' />
+
         </div>
 
 
