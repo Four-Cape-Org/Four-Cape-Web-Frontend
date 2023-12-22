@@ -7,22 +7,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
-        'rubik': ['Rubik', 'sans-serif'],
+        'primary': ['Montserrat', 'sans-serif'],
+        'secondary': ['EB Garamond', 'serif'],
       },
     },
-  },
-  plugins: [
-
-    // this is a custom utility for letter spacing 
-    function ({ addUtilities }) {
-      const newUtilities = {};
-
-      for (let i = 1; i <= 100; i++) {
-        newUtilities[`.tracking-${i}`] = { 'letter-spacing': `${i / 100}em` };
-      }
-
-      addUtilities(newUtilities, ['responsive', 'hover']);
+    colors: {
+      'bg-color': '#262626',
+      'primary-color': '#F2F2F2',
+      'secondary-color': '#1D1D1D',
+      'accent-color': '#F82586',
     },
-  ],
+  },
+  plugins: [],
 }
