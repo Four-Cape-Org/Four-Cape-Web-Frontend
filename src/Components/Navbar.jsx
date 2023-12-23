@@ -20,10 +20,10 @@ const Navbar = () => {
                     <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/">Home</NavLink>
                 </li>
                 <li className='mx-[10px]'>
-                    <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/about">About <i class="fa-solid fa-chevron-down"></i></NavLink>
+                    <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/about">About <i className="fa-solid fa-chevron-down"></i></NavLink>
                 </li>
                 <li className='mx-[10px]'>
-                    <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/services">Services <i class="fa-solid fa-chevron-down"></i></NavLink>
+                    <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/services">Services <i className="fa-solid fa-chevron-down"></i></NavLink>
                 </li>
                 <li className='mx-[10px]'>
                     <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/blogs">Blogs</NavLink>

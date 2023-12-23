@@ -21,4 +21,14 @@
         color: white;
         overflow-x: hidden;
     }
+
+    ::-moz-selection { 
+        color: rgb(255, 255, 255);
+        background: #F82586;
+    }
+      
+    ::selection {
+        color: rgb(255, 255, 255);
+        background: #F82586;
+    }
 }
