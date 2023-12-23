@@ -5,7 +5,7 @@ import Navbar from '../Navbar'
 // import Bubbles from '../Bubbles'
 import HomeHero from './HomeHero'
 import AboutSection from './AboutSection'
-// import ServiceCards from './ServiceCards'
+import ServiceSection from './ServiceSection'
 
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
       <Navbar/>      
       <HomeHero />
       <AboutSection />
-      {/* <ServiceCards /> */}
+      <ServiceSection />
     </>
   )
 }
