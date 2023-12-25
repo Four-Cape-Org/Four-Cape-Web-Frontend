@@ -7,6 +7,7 @@ import AboutSection from './AboutSection'
 import ServiceSection from './ServiceSection'
 import ClientReview from './ClientReview'
 import JumboButton from '../Elements/JumboButton'
+import Footer from '../Footer'
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <ServiceSection />
       <ClientReview />
       <JumboButton link="/" spanText="Got a Project ?" title="Tell us Everything." />
+      <Footer />
     </>
   )
 }
