@@ -16,6 +16,7 @@ export default {
       'primary-color': '#F2F2F2',
       'secondary-color': '#1D1D1D',
       'accent-color': '#F82586',
+      'accent-hover': '#d45d95',
     },
   },
   plugins: [],
