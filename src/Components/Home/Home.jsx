@@ -8,6 +8,7 @@ import ServiceSection from './ServiceSection'
 import ClientReview from './ClientReview'
 import JumboButton from '../Elements/JumboButton'
 import Footer from '../Footer'
+import BookCall from './BookCall'
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <HomeHero />
       <AboutSection />
       <ServiceSection />
+      <BookCall />
       <ClientReview />
       <JumboButton link="/" spanText="Got a Project ?" title="Tell us Everything." />
       <Footer />
