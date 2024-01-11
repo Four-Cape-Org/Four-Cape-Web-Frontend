@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { NavLink, Link } from 'react-router-dom';
 import Logo from '../assets/img/prime/fourcapeLogoWhite.png';
 
-const Navbar = () => {
+const Navbar = ({bookCallRef, buttonVisible = true}) => {
+
+    const scrollToElement = (ref) => {
+        ref.current?.scrollIntoView({behavior: 'smooth'});
+      };
 
   return (
     <nav className='flex justify-around items-center p-[20px]'>
@@ -26,12 +30,14 @@ const Navbar = () => {
                     <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/services">Services</NavLink>
                 </li>
                 <li className='mx-[10px]'>
-                    <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/contacts">Contact</NavLink>
+                    <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/contact">Contact</NavLink>
                 </li>
             </ul>
 
-            <button className='px-[22px] py-[13px] rounded-[50px] border-[2px] border-[white] text-[white] bg-[transparent] font-semibold text-[11px] hover:bg-[transparent] hover:border-accent-color hover:shadow-lg  font-rubik hover:shadow-gray-500/40 transition-all duration-500 hover:translate-y-[-4px]'>BOOK A CALL</button>
-        </div>
+            {buttonVisible ? 
+            <button onClick={() => {scrollToElement(bookCallRef)}} className='px-[22px] py-[13px] rounded-[50px] border-[2px] border-[white] text-[white] bg-[transparent] font-semibold text-[11px] hover:bg-[transparent] hover:border-accent-color hover:shadow-lg  font-rubik hover:shadow-gray-500/40 transition-all duration-500 hover:translate-y-[-4px]'>BOOK A CALL</button>
+            : null}
+            </div>
 
     </nav>
   )
