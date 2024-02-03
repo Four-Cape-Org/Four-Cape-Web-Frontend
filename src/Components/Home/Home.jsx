@@ -23,7 +23,7 @@ const Home = () => {
       <BookCall  bookCallRef={bookCallRef}/>
       <ClientReview />
       <JumboButton link="/" spanText="Got a Project ?" title="Tell us Everything." />
-      <Footer />
+      <Footer bookCallRef={bookCallRef}/>
     </>
   )
 }
