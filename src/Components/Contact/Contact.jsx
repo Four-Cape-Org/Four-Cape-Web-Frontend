@@ -90,7 +90,7 @@ const Contact = () => {
           
         </section>
         <BookCall  bookCallRef={bookCallRef} />
-        <Footer />
+        <Footer  bookCallRef={bookCallRef} />
     </>
   )
 }

@@ -19,7 +19,7 @@ const PNF = () => {
           <p className="text-[20px] font-bold">The page you are looking for does not exist.</p>
         </div>
       </main>
-      <Footer />
+      <Footer buttonVisible={false} />
     </>
   )
 }

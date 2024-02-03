@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { NavLink, Link } from 'react-router-dom';
 import Logo from '../assets/img/prime/fourcapeLogoWhite.png';
 
@@ -25,6 +25,9 @@ const Navbar = ({bookCallRef, buttonVisible = true}) => {
                 </li>
                 <li className='mx-[10px]'>
                     <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/work">Our Work</NavLink>
+                </li>
+                <li className='mx-[10px]'>
+                    <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/about">About Us</NavLink>
                 </li>
                 <li className='mx-[10px]'>
                     <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/services">Services</NavLink>
