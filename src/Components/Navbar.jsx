@@ -37,7 +37,7 @@ const Navbar = ({bookCallRef, buttonVisible = true}) => {
                     <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/">Home</NavLink>
                 </li>
                 <li className='mx-[10px]'>
-                    <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/work">Our Work</NavLink>
+                    <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/portfolio">Our Work</NavLink>
                 </li>
                 <li className='mx-[10px]'>
                     <NavLink className="p-[10px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" to="/about">About Us</NavLink>
