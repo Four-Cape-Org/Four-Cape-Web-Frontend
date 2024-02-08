@@ -12,10 +12,10 @@ const Navbar = ({bookCallRef, buttonVisible = true}) => {
     const [navAccordionState, setNavAccordionState] = useState("hidden");
 
     const handleNavAccordion = () => {
-        if(navAccordionState === "hidden" || navAccordionState === "shrinkVertical"){
-            setNavAccordionState("expandVertical");
+        if(navAccordionState === "hidden" || navAccordionState === "animate-shrinkVertical"){
+            setNavAccordionState("animate-expandVertical");
         }else{
-            setNavAccordionState("shrinkVertical");
+            setNavAccordionState("animate-shrinkVertical");
         }
     }
 

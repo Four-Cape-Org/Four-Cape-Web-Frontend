@@ -21,14 +21,14 @@ export default {
             overflowY: "hidden"
           },
           '100%': {
-            height: "100vh",
-            overflowY: "none"
+            height: "max-content",
+            overflowY: "auto"
           }
         },
         shrinkVertical: {
           '0%': {
-            height: "100vh",
-            overflowY: "none"
+            height: "max-content",
+            overflowY: "auto"
           },
           '1%': {
             overflowY: 'hidden'
