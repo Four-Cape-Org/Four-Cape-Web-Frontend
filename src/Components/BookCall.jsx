@@ -1,13 +1,13 @@
 import React from 'react'
 
-import BookCallImg from '../../assets/img/home/bookCall.svg'
+import BookCallImg from '../assets/img/home/bookCall.svg'
 
-const BookCall = () => {
+const BookCall = ({bookCallRef}) => {
 
     const formInputStyle = `w-[100%] bg-[transparent] py-[10px] px-[15px] mb-[15px] placeholder:text-[#484848] placeholder:text-[13px] text-[17px] text-[black] rounded-md border-[1px] border-[#484848] outline-none`
 
   return (
-    <div className='bg-[#953F66] flex justify-center items-center flex-wrap  py-[4em] mt-[5em]'>
+    <div className='bg-[#953F66] flex justify-center items-center flex-wrap  py-[4em] mt-[5em]' ref={bookCallRef}>
         <div className='w-[30%] flex flex-col justify-center items-start'>
             <h3 className='text-primary text-[white] text-[25px] font-semibold'>Lets Build Together.</h3>
             <p className='text-[#cacaca] text-[15px] w-[75%] my-[10px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum ex voluptatibus ipsa maxime, nostrum magni id corporis doloribus eveniet.</p>

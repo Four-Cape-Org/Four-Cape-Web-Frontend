@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 
 // Component imports
 import Navbar from '../Navbar'
@@ -8,20 +8,22 @@ import ServiceSection from './ServiceSection'
 import ClientReview from './ClientReview'
 import JumboButton from '../Elements/JumboButton'
 import Footer from '../Footer'
-import BookCall from './BookCall'
+import BookCall from '../BookCall'
 
 
 const Home = () => {
+
+  const bookCallRef = useRef(null);
   return (
     <>
-      <Navbar/>      
+      <Navbar bookCallRef={bookCallRef}/>      
       <HomeHero />
       <AboutSection />
       <ServiceSection />
-      <BookCall />
+      <BookCall  bookCallRef={bookCallRef}/>
       <ClientReview />
       <JumboButton link="/" spanText="Got a Project ?" title="Tell us Everything." />
-      <Footer />
+      <Footer bookCallRef={bookCallRef}/>
     </>
   )
 }

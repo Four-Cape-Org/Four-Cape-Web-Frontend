@@ -15,7 +15,13 @@ import youtubeIcon from '../assets/img/general/footer/YoutubeIcon.svg'
 import { Link } from 'react-router-dom'
 
 
-const Footer = () => {
+const Footer = ({bookCallRef, buttonVisible = true}) => {
+
+
+    const scrollToElement = (ref) => {
+        ref.current?.scrollIntoView({behavior: 'smooth'});
+      };
+
   return (
     <div className='footer'>
 
@@ -81,20 +87,15 @@ const Footer = () => {
                 <li className='my-[20px] font-semibold'>
                     <Link to='/' className='hover:text-accent-color'>About Us</Link>
                 </li>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Our Service</Link>
-                </li>
             </ul>
             
             <ul className='flex flex-col justify-center items-start'>
                 <li className='my-[20px] font-semibold'>
+                    <Link to='/' className='hover:text-accent-color'>Our Service</Link>
+                </li>
+
+                <li className='my-[20px] font-semibold'>
                     <Link to='/' className='hover:text-accent-color'>Contact Us</Link>
-                </li>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Our Blogs</Link>
-                </li>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Connect With Us</Link>
                 </li>
             </ul>
             
@@ -102,18 +103,13 @@ const Footer = () => {
                 <li className='my-[20px] font-semibold'>
                     <Link to='/' className='hover:text-accent-color'>Our Work</Link>
                 </li>
+                {buttonVisible ? 
                 <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Schedule a Call</Link>
-                </li>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Our Portfolio</Link>
-                </li>
+                    <Link  onClick={() => {scrollToElement(bookCallRef)}} className='hover:text-accent-color'>Schedule a Call</Link>
+                </li> : null}
             </ul>
             
             <ul className='flex flex-col justify-center items-start'>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Our Team</Link>
-                </li>
                 <li className='my-[20px] font-semibold'>
                     <Link to='/' className='hover:text-accent-color'>Terms & Conditions</Link>
                 </li>
