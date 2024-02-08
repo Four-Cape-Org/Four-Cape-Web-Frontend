@@ -10,6 +10,35 @@ export default {
         'primary': ['Montserrat', 'sans-serif'],
         'secondary': ['EB Garamond', 'serif'],
       },
+      animation:{
+        expandVertical: "expandVertical 1s ease-in-out forwards",
+        shrinkVertical: "shrinkVertical 1s ease-in-out forwards"
+      },
+      keyframes:{
+        expandVertical: {
+          '0%': {
+            height: "0px",
+            overflowY: "hidden"
+          },
+          '100%': {
+            height: "100vh",
+            overflowY: "none"
+          }
+        },
+        shrinkVertical: {
+          '0%': {
+            height: "100vh",
+            overflowY: "none"
+          },
+          '1%': {
+            overflowY: 'hidden'
+          },
+          '100%': {
+            height: '0%',
+            overflowY: 'hidden'
+          }
+        }
+      }
     },
     colors: {
       'bg-color': '#262626',
