@@ -7,11 +7,13 @@ import About from './About/About'
 import Services from './Services/Services'
 import Contact from './Contact/Contact'
 import PNF from './PNF/PNF'
+import Portfolio from './Portfolio/Portfolio'
 
 const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
