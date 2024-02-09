@@ -11,8 +11,8 @@ export default {
         'secondary': ['EB Garamond', 'serif'],
       },
       animation:{
-        expandVertical: "expandVertical 1s ease-in-out forwards",
-        shrinkVertical: "shrinkVertical 1s ease-in-out forwards"
+        expandVertical: "expandVertical .3s ease-in-out forwards",
+        shrinkVertical: "shrinkVertical .3s ease-in-out forwards"
       },
       keyframes:{
         expandVertical: {
@@ -21,20 +21,20 @@ export default {
             overflowY: "hidden"
           },
           '100%': {
-            height: "100vh",
-            overflowY: "none"
+            height: "300px",
+            overflowY: "auto"
           }
         },
         shrinkVertical: {
           '0%': {
-            height: "100vh",
-            overflowY: "none"
+            height: "300px",
+            overflowY: "auto"
           },
           '1%': {
             overflowY: 'hidden'
           },
           '100%': {
-            height: '0%',
+            height: '0px',
             overflowY: 'hidden'
           }
         }
