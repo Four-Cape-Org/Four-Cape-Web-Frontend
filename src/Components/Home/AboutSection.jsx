@@ -13,10 +13,10 @@ const AboutSection = (props) => {
         <OverlayText className="absolute top-[-50px] left-10 z-[0] text-[20vw] max-[1250px]:text-[18vw] max-[550px]:left-3" text="About" />
         <div className='relative w-screen flex justify-end items-center pt-[4em] sm:pt-[7em] md:pt-[10em] lg:pt-[17em] pb-[10em]'>
             <img src={AboutImg} className='w-screen blur-[3px] brightness-50 lg:w-[80%] md:w-screen md:brightness-25' alt="" />
-            <div className='absolute top-[40%] left-[15em] flex flex-col justify-center items-start w-[40%]'>
+            <div className='absolute top-[20%] sm:top-[20%] md:top-[30%] flex flex-col justify-center items-start w-[95%] sm:w-[90%] md:w-[80%] lg:w-[60%] lg:left-[10em] md:left-[6em] sm:left-[3em] left-[1em]'>
                 <p className='text-accent-color font-bold font-primary text-[20px] my-[10px]'>About Us</p>
-                <h2 className='font-secondary text-[4em] drop-shadow-xl'>We are a Boston based Marketing Agency, started in 2014</h2>
-                <p className='font-primary text-[15px] w-[50%] my-[20px]'>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
+                <h2 className='font-secondary lg:text-[4em] md:text-[3em] sm:text-[2em] text-[1.5em] drop-shadow-xl'>We are a Boston based Marketing Agency, started in 2014</h2>
+                <p className='font-primary text-[12px] w-[95%] my-[20px] lg:w-[70%] md:w-[80%] sm:w-[90%] sm:text-[15px]'>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
                 <BubbleButtonSecondary className='my-[32px]' sendTo='/about' text='LEARN MORE' />
             </div>
         </div>
