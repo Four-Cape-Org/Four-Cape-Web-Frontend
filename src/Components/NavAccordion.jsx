@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const NavAccordion = ({navAccordionState, setNavAccordionState, scrollToElement, bookCallRef}) => {
+const NavAccordion = ({navAccordionState, setNavAccordionState, handleNavAccordion, scrollToElement, bookCallRef}) => {
   return (
     <div className={`${navAccordionState} w-screen`}>
         <ul className="flex flex-col justify-center items-center min-[1000px]:hidden w-[100%]">
@@ -23,7 +23,7 @@ const NavAccordion = ({navAccordionState, setNavAccordionState, scrollToElement,
             <li  className='border-[1px] border-[white] w-[100%]'>
                 <Link onClick={() => {
                     scrollToElement(bookCallRef);
-                    setNavAccordionState("hidden");
+                    handleNavAccordion();
                 }} className="inline-block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/contact">Book a call</Link>
             </li>
         </ul>
