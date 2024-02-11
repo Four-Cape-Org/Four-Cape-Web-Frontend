@@ -9,7 +9,7 @@ import CardImg1 from '../../assets/img/general/serviceCards/service_card_1.jpeg'
 const ServiceSection = () => {
   return (
     <div className='relative top-0'>
-        <OverlayText className='absolute top-0px left-10 z-0 text-[20em]' text='Services' />
+        <OverlayText className='absolute top-0 left-10 z-[0] text-[20vw] max-[1250px]:text-[18vw] max-[550px]:left-3' text='Services' />
 
         <div className="relative pt-[7em] flex flex-wrap justify-center items-center">
 
@@ -17,7 +17,7 @@ const ServiceSection = () => {
 
                 <div className="flex flex-col justify-center items-start mx-[5em] my-[7em] w-[20%] h-[48em]">
                     <p className='text-accent-color font-bold font-primary text-[20px] my-[10px]'>Our Services</p>
-                    <h2 className='font-secondary text-[4em] drop-shadow-xl'>We do we do ?</h2>
+                    <h2 className='font-secondary text-[4em] drop-shadow-xl'>What do we do ?</h2>
                     <BubbleButtonSecondary className='my-[32px]' sendTo='/services' text='More of our Services' />
                 </div>
 

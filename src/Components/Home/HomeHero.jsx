@@ -7,7 +7,7 @@ import HeroImg from '../../assets/img/home/home_hero_vector_1.svg'
 
 const HomeHero = () => {
   return (
-    <div className='flex flex-wrap justify-center items-center hero h-[100%] mt-[2em]'>
+    <div className='flex flex-wrap justify-center items-center hero h-[100%] mt-[4em]'>
 
         <div className='flex flex-col justify-center items-start py-[30px] px-[5em] max-[675px]:items-center'>
           <p className='font-primary text-accent-color font-semibold text-[15px] tracking-[3px] max-[400px]:text-[12px]'>Your Vision | Our Expertise</p>
