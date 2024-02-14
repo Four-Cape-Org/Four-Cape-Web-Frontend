@@ -5,15 +5,15 @@ import Arrow from '../../assets/img/general/JumboButtonArrow.svg'
 
 const JumboButton = (props) => {
   return (
-    <div className='mx-auto my-[13em]'>
+    <div className='md:my-[13em] my-[10em]'>
         <Link to={props.link}>
-            <div className="group relative mx-auto w-[80%] bg-accent-color py-[3em] pl-[4em] pr-[4em] overflow-hidden">
+            <div className="group relative mx-auto lg:w-[90%] bg-accent-color py-[3em] sm:px-[4em] px-[2em] overflow-hidden">
                 <p className='font-secondary text-[25px] font-semibold'>{props.spanText}</p>
-                <div className='flex justify-start items-center'>
-                    <h3 className='font-secondary drop-shadow-lg text-[4.5em] my-8'>{props.title}</h3>
-                    <img src={Arrow} className='absolute right-[10em] top-[50%] translate-y-[-50%]  z-[1] group-hover:right-[8em] transition-all duration-[0.5s]' alt="" />
+                <div className='sm:flex flex-none w-[100%] justify-start items-center'>
+                    <h3 className='font-secondary drop-shadow-lg lg:text-[4.5em] md:text-[3em] sm:text-[2.5em] text-[1.5em] my-8'>{props.title}</h3>
+                    <img src={Arrow} className='lg:w-[30%] md:w-[25%] sm:w-[25%] w-[10em] absolute lg:right-[6em] md:right-[6em] sm:right-[6em] right-[6em] sm:top-[50%] sm:translate-y-[-50%] top-[9.5em]  z-[1] lg:group-hover:right-[4em] md:group-hover:right-[4em] sm:group-hover:right-[4em] group-hover:right-[4em] transition-all duration-[0.5s]' alt="" />
                 </div>
-                <div className="absolute bottom-[-84px] right-[-47px] z-[0] bg-[#C31264] h-[20em] w-[20em] rounded-[50%]"></div>
+                <div className="absolute lg:bottom-[-84px] md:bottom-[-60px] sm:bottom-[-60px] bottom-[-60px] lg:right-[-47px] md:right-[-60px] sm:right-[-60px] right-[-60px] z-[0] bg-[#C31264] lg:h-[20em] lg:w-[20em] md:h-[15em] md:w-[15em] sm:h-[12em] sm:w-[12em] h-[12em] w-[12em] rounded-[50%]"></div>
             </div>
         </Link>
     </div>
