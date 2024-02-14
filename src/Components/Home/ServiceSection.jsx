@@ -18,7 +18,7 @@ const ServiceSection = () => {
                 <div className="flex flex-col justify-center items-start lg:mx-[3em] md:mx-[3em] lg:my-[7em] lg:w-[25%] md:w-[37%] sm:w-[60%] w-[90%] mx-auto lg:h-[48em] md:h-[30em]">
                     <p className='text-accent-color font-bold font-primary text-[20px] my-[10px]'>Our Services</p>
                     <h2 className='font-secondary text-[4em] drop-shadow-xl'>What do we do ?</h2>
-                    <BubbleButtonSecondary className='my-[32px]' sendTo='/services' text='More Services' />
+                    <BubbleButtonSecondary className='my-[32px]' sendTo='/services' text='Check Out' />
                 </div>
 
                 <div className="flex flex-col justify-center items-center lg:mx-[2em] sm:mx-[3em] lg:my-[7em] lg:w-[25%] md:w-[37%] sm:w-[50%] w-[90%]">
