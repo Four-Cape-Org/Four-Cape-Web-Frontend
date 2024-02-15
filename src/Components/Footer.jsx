@@ -25,15 +25,15 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
   return (
     <div className='footer'>
 
-        <div className="flex justify-evenly items-center px-4">
-            <form className='lg:w-[50%] md:w-[50%] sm:w-[45%] max-w-[40em]'>
-                <h2 className='lg:text-[30px] md:text-[26px] font-bold lg:w-[70%] md:w-[85%] sm:w-[85%] my-[20px]'>SUBSCRIBE TO OUR NEWSLETTER !</h2>
-                <div className="flex justify-end items-center border-b-[2px] lg:w-[85%] md:w-[90%] sm:w-[90%] my-[60px]">
+        <div className="flex sm:flex-row flex-col justify-evenly items-center px-4">
+            <form className='lg:w-[50%] md:w-[50%] sm:w-[45%] w-[80%] max-w-[40em]'>
+                <h2 className='lg:text-[30px] md:text-[26px] sm:text-[22px] text-[18px] font-bold lg:w-[70%] md:w-[85%] sm:w-[85%] w-[90%] my-[20px]'>SUBSCRIBE TO OUR NEWSLETTER !</h2>
+                <div className="flex justify-end items-center border-b-[2px] lg:w-[85%] md:w-[90%] sm:w-[90%] w-[100%] my-[60px]">
                     <input type="email" placeholder='Your Email' className='bg-[transparent] w-[88%] py-[10px] px-[15px] outline-none' required/>
                     <button type="submit"><img src={sendIcon} className='h-[50px] w-[50px] px-[10px] py-[5px] hover:pb-[12px] transition-all' alt="Send" /></button>
                 </div>
             </form>
-            <div className='lg:w-[45%] md:w-[45%] sm:w-[45%] max-w-[40em]'>
+            <div className='lg:w-[45%] md:w-[45%] sm:w-[45%] w-[95%] sm:max-w-[40em] max-w-[25em]'>
                 <img src={footerImage} className='w-[100%]' alt="" />
             </div>
         </div>
