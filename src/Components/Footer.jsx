@@ -40,14 +40,14 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
 
         <div className="flex flex-wrap justify-center items-center my-[2em]">
 
-            <div className='flex flex-col justify-center items-start lg:w-[25%] md:w-[30%] sm:w-[35%] w-[85%] lg:mx-[6em] md:mx-[4em] sm:mx-[2em] my-[3.5em]'>
-                <img src={Logo} className='w-[14em] mb-[40px]' alt="FourCape" />
-                <p className='lg:text-[16px] md:text-[14px] sm:text-[14px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium labore quidem ipsam porro fugit libero sunt omnis laboriosam expedita!</p>
+            <div className='flex flex-col justify-center sm:items-start items-center lg:w-[25%] md:w-[30%] sm:w-[35%] w-[85%] lg:mx-[6em] md:mx-[4em] sm:mx-[2em] my-[3.5em]'>
+                <img src={Logo} className='w-[14em] lg:mb-[40px] mb-[20px]' alt="FourCape" />
+                <p className='lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] sm:text-left text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium labore quidem ipsam porro fugit libero sunt omnis laboriosam expedita!</p>
             </div>
 
             <div className="lg:mx-[5em] md:mx-[3em] sm:mx-[2em] my-[3.5em]">
 
-                <h3 className='text-[25px] font-bold'>REACH US AT:</h3>
+                <h3 className='text-[25px] sm:text-left text-center font-bold'>REACH US AT:</h3>
 
                 <ul className='flex flex-col justify-center items-start pl-[20px] py-[15px]'>
                     <li>
@@ -93,49 +93,49 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
         </div>
 
 
-        <div className='flex justify-evenly items-center flex-wrap'>
+        <div className='flex flex-row justify-evenly items-center flex-wrap'>
 
-            <ul className='flex flex-col justify-center items-start'>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Home</Link>
+            <ul className='flex flex-col justify-center sm:items-start items-center'>
+                <li className='my-[20px] mx-[35px] font-semibold'>
+                    <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>Home</Link>
                 </li>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>About Us</Link>
+                <li className='my-[20px] mx-[35px] font-semibold'>
+                    <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>About Us</Link>
                 </li>
             </ul>
             
-            <ul className='flex flex-col justify-center items-start'>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Our Service</Link>
+            <ul className='flex flex-col justify-center sm:items-start items-center'>
+                <li className='my-[20px] mx-[35px] font-semibold'>
+                    <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>Our Service</Link>
                 </li>
 
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Contact Us</Link>
+                <li className='my-[20px] mx-[35px] font-semibold'>
+                    <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>Contact Us</Link>
                 </li>
             </ul>
             
-            <ul className='flex flex-col justify-center items-start'>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Our Work</Link>
+            <ul className='flex flex-col justify-center sm:items-start items-center'>
+                <li className='my-[20px] mx-[35px] font-semibold'>
+                    <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>Our Work</Link>
                 </li>
                 {buttonVisible ? 
-                <li className='my-[20px] font-semibold'>
-                    <Link  onClick={() => {scrollToElement(bookCallRef)}} className='hover:text-accent-color'>Schedule a Call</Link>
+                <li className='my-[20px] mx-[35px] font-semibold'>
+                    <Link  onClick={() => {scrollToElement(bookCallRef)}} className='hover:text-accent-color md:text-[17px] text-[13px]'>Schedule a Call</Link>
                 </li> : null}
             </ul>
             
-            <ul className='flex flex-col justify-center items-start'>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Terms & Conditions</Link>
+            <ul className='flex flex-col justify-center sm:items-start items-center'>
+                <li className='my-[20px] mx-[35px] font-semibold'>
+                    <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>Terms & Conditions</Link>
                 </li>
-                <li className='my-[20px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color'>Privacy Policies</Link>
+                <li className='my-[20px] mx-[35px] font-semibold'>
+                    <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>Privacy Policies</Link>
                 </li>
             </ul>
 
         </div>
 
-        <p className='text-center py-[4em] font-semibold'>All Rights Reserved © since 2023 | <span className='text-accent-color'>FourCape</span></p>
+        <p className='text-center py-[4em] md:text-[18px] text-[15px] font-semibold'>All Rights Reserved © since 2023 | <span className='text-accent-color'>FourCape</span></p>
 
     </div>
   )
