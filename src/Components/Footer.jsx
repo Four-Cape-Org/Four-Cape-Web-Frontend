@@ -40,12 +40,12 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
 
         <div className="flex flex-wrap justify-center items-center my-[2em]">
 
-            <div className='flex flex-col justify-center items-start lg:w-[25%] md:w-[30%] lg:mx-[6em] md:mx-[4em] my-[3.5em]'>
+            <div className='flex flex-col justify-center items-start lg:w-[25%] md:w-[30%] sm:w-[35%] w-[85%] lg:mx-[6em] md:mx-[4em] sm:mx-[2em] my-[3.5em]'>
                 <img src={Logo} className='w-[14em] mb-[40px]' alt="FourCape" />
-                <p className='lg:text-[16px] md:text-[14px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium labore quidem ipsam porro fugit libero sunt omnis laboriosam expedita!</p>
+                <p className='lg:text-[16px] md:text-[14px] sm:text-[14px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium labore quidem ipsam porro fugit libero sunt omnis laboriosam expedita!</p>
             </div>
 
-            <div className="lg:mx-[5em] md:mx-[3em] my-[3.5em]">
+            <div className="lg:mx-[5em] md:mx-[3em] sm:mx-[2em] my-[3.5em]">
 
                 <h3 className='text-[25px] font-bold'>REACH US AT:</h3>
 
