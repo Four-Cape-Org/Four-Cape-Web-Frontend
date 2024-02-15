@@ -50,13 +50,17 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
                 <h3 className='text-[25px] font-bold'>REACH US AT:</h3>
 
                 <ul className='flex flex-col justify-center items-start pl-[20px] py-[15px]'>
-                    <li className='flex justify-center items-center my-[10px]'>
-                        <img src={callIcon} className='mr-[10px]' alt="" />
-                        <span>+ 91 88990 60179</span>
+                    <li>
+                        <Link to="/" className='flex justify-center items-center my-[10px]'>
+                            <img src={callIcon} className='mr-[10px]' alt="" />
+                            <span>+ 91 88990 60179</span>
+                        </Link>
                     </li>
-                    <li className='flex justify-center items-center my-[10px]'>
-                    <img src={emailIcon} className='mr-[10px]' alt="" />
-                        <span>fourcape@gmail.com</span>
+                    <li>
+                        <Link to="/" className='flex justify-center items-center my-[10px]'>
+                            <img src={emailIcon} className='mr-[10px]' alt="" />
+                            <span>fourcape@gmail.com</span>
+                        </Link>
                     </li>
                 </ul>
 
@@ -67,10 +71,21 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
                 <h3 className='text-[25px] font-bold'>CHAT WITH US AT:</h3>
 
                 <div className='flex justify-center items-center my-[4em]'>
-                    <img src={linkedinIcon} className='mx-[25px]' alt="LinkedIn" />
-                    <img src={instagramIcon} className='mx-[25px]' alt="Instagram" />
-                    <img src={facebookIcon} className='mx-[25px]' alt="Facebook" />
-                    <img src={youtubeIcon} className='mx-[25px]' alt="Youtube" />
+                    <Link to="/" className='mx-[25px]'>
+                        <img src={linkedinIcon} alt="LinkedIn" />
+                    </Link>
+                    
+                    <Link to="/" className='mx-[25px]'>
+                        <img src={instagramIcon} alt="Instagram" />
+                    </Link>
+
+                    <Link to="/" className='mx-[25px]'>
+                        <img src={facebookIcon} alt="Facebook" />
+                    </Link>
+
+                    <Link to="/" className='mx-[25px]'>
+                        <img src={youtubeIcon} alt="Youtube" />
+                    </Link>
                 </div>
             
             </div>
