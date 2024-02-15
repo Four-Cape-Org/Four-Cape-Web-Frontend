@@ -26,26 +26,26 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
     <div className='footer'>
 
         <div className="flex justify-evenly items-center px-4">
-            <form className='lg:w-[50%] md:w-[50%] max-w-[40em]'>
-                <h2 className='lg:text-[30px] md:text-[26px] font-bold lg:w-[70%] md:w-[85%] my-[20px]'>SUBSCRIBE TO OUR NEWSLETTER !</h2>
-                <div className="flex justify-end items-center border-b-[2px] lg:w-[85%] md:w-[90%] my-[60px]">
+            <form className='lg:w-[50%] md:w-[50%] sm:w-[45%] max-w-[40em]'>
+                <h2 className='lg:text-[30px] md:text-[26px] font-bold lg:w-[70%] md:w-[85%] sm:w-[85%] my-[20px]'>SUBSCRIBE TO OUR NEWSLETTER !</h2>
+                <div className="flex justify-end items-center border-b-[2px] lg:w-[85%] md:w-[90%] sm:w-[90%] my-[60px]">
                     <input type="email" placeholder='Your Email' className='bg-[transparent] w-[88%] py-[10px] px-[15px] outline-none' required/>
                     <button type="submit"><img src={sendIcon} className='h-[50px] w-[50px] px-[10px] py-[5px] hover:pb-[12px] transition-all' alt="Send" /></button>
                 </div>
             </form>
-            <div className='lg:w-[45%] md:w-[45%] max-w-[40em]'>
+            <div className='lg:w-[45%] md:w-[45%] sm:w-[45%] max-w-[40em]'>
                 <img src={footerImage} className='w-[100%]' alt="" />
             </div>
         </div>
 
         <div className="flex flex-wrap justify-center items-center my-[2em]">
 
-            <div className='flex flex-col justify-center items-start w-[25%] mx-[6em] my-[3.5em]'>
+            <div className='flex flex-col justify-center items-start lg:w-[25%] md:w-[30%] lg:mx-[6em] md:mx-[4em] my-[3.5em]'>
                 <img src={Logo} className='w-[14em] mb-[40px]' alt="FourCape" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium labore quidem ipsam porro fugit libero sunt omnis laboriosam expedita!</p>
+                <p className='lg:text-[16px] md:text-[14px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium labore quidem ipsam porro fugit libero sunt omnis laboriosam expedita!</p>
             </div>
 
-            <div className="mx-[5em]  my-[3.5em]">
+            <div className="lg:mx-[5em] md:mx-[3em] my-[3.5em]">
 
                 <h3 className='text-[25px] font-bold'>REACH US AT:</h3>
 
@@ -66,9 +66,9 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
 
             </div>
 
-            <div className="flex flex-col justify-start items-center mx-[4em]  my-[3.5em]">
+            <div className="flex flex-col justify-start items-center lg:mx-[4em] md:mx-[3em]  my-[3.5em]">
 
-                <h3 className='text-[25px] font-bold'>CHAT WITH US AT:</h3>
+                <h3 className='text-[25px] font-bold'>CONNECT WITH US:</h3>
 
                 <div className='flex justify-center items-center my-[4em]'>
                     <Link to="/" className='mx-[25px]'>
