@@ -1,0 +1,17 @@
+-------------- Primary ---------------
+
+> Making work page responsive
+> Fixing Home page minor issues
+> Properly building about us page
+> Properly building services page
+> Making 404 page responsive
+> Making Forms work
+> Updating all Links (Third Party and local links)
+> Adding Actual Content
+
+-------------- Secondary ---------------
+
+> Showing Active Page on Nav Menu
+> Showing Active Page on Mobile Nav Menu
+> Making Navbar Sticky or Fixed
+> Adding Animations
