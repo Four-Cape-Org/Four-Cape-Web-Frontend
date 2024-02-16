@@ -19,7 +19,7 @@ const Portfolio = () => {
     <>
         <Navbar bookCallRef={bookCallRef}/>
         <div className='relative lg:h-[22em] md:h-[14em] sm:h-[11em] h-[7em] w-screen mt-5'>
-          <OverlayText className="absolute top-0 left-10 z-[0] text-[18vw] max-[1250px]:text-[16vw] max-[550px]:left-3" text="Our Work" />
+          <OverlayText className="absolute top-0 lg:left-10 md:left-7 sm:left-5 left-3 z-[0] text-[18vw] max-[1250px]:text-[16vw]" text="Our Work" />
           <h2 className='absolute top-[70%] left-[50%] translate-x-[-50%] text-accent-color font-bold font-primary text-[22px] sm:text-[27px] md:text-[35px] lg:text-[45px]'>Porfolio</h2>
         </div>
         <ShowReel/>
