@@ -3,7 +3,7 @@ import { useRef } from 'react'
 import Navbar from '../Navbar'
 import BookCall from '../BookCall'
 import OverlayText from '../Elements/OverlayText'
-import AboutSection from '../Home/AboutSection'
+import ShowReel from './ShowReel'
 import Youtube from './Youtube'
 import Reels from './Reels'
 import Design from './Design'
@@ -18,7 +18,11 @@ const Portfolio = () => {
   return (
     <>
         <Navbar bookCallRef={bookCallRef}/>
-        {/* <OverlayText className='absolute top-0px left-10 z-0 text-[18em]' text='Our Work' /> */}
+        <div className='relative h-[22em] w-screen mt-5'>
+          <OverlayText className="absolute top-0 left-10 z-[0] text-[18vw] max-[1250px]:text-[16vw] max-[550px]:left-3" text="Our Work" />
+          <h2 className='absolute top-[70%] left-[50%] translate-x-[-50%] text-accent-color font-bold font-primary text-[15px] sm:text-[15px] md:text-[20px] lg:text-[45px]'>Porfolio</h2>
+        </div>
+        <ShowReel/>
         <Reels/>
         <Youtube/>
         <Design/>
