@@ -63,38 +63,33 @@ import shortsThumbnail3 from '../../assets/img/portfolio/shortsThumbail3.png';
 
 import reelsIcon from '../../assets/img/portfolio/reelsIcon.png';
 
-
 const Reels = () => {
     return (
-        <div>
-
-            <div>
-                <div className='w-[10rem] text-2xl font-semibold p-[5px] m-[6rem] mb-[2rem]'>
-                    <p className='text-red'>OUR EDITS</p>
-                </div>
-
-                <div className=' text-start text-[5.5rem] underline font-semibold p-[5px] '>
-                    <p className='font-secondary text-center'>Play through our Amazing Edits</p>
-                </div>
+        <>
+            <h1 className='font-secondary text-center lg:text-[3.5rem] md:text-[3rem] sm:text-[2.8rem] text-[2.5rem] mx-5 underline font-semibold '>Play through our Amazing Edits</h1>
+        
+            <div className='flex flex-row justify-start items-center sm:mx-[3rem] sm:ml-[3rem] ml-[3rem] my-[3rem] '>
+                <img src={reelsIcon} alt="reelsIcon" className='w-[40px] h-[40px]' />
+                <h2 className='w-[15rem] h-[3rem] p-[11px] mt-[5px] font-primary font-semibold sm:text-xl text-[20px]'>Reels and Shorts</h2>
             </div>
-
-            <div className='flex flex-row m-[3rem] ml-[5rem]'>
-                <img src={reelsIcon} alt="reelsIcon" className='w-[60px]' />
-                <div className='w-[15rem] h-[3rem] p-[11px] mt-[5px] font-primary font-semibold text-xl'>
-                    <h2>Reels and Shorts</h2>
-                </div>
-            </div>
-            <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
-                spaceBetween={30}
-                slidesPerView={4}
-                loop={true}
-            // navigation
-            // pagination={{ clickable: true }}
-            // scrollbar={{ draggable: true }}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log('slide change')}
-            >
+          
+                <Swiper
+                    modules={[Navigation, Pagination]}
+                    breakpoints={{
+                        340: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                        },
+                        700: {
+                        slidesPerView: 3,
+                        spaceBetween: 15,
+                        },
+                    }}
+                    style={{
+                        "--swiper-theme-color": "#F82586"
+                    }}
+                    pagination={{clickable: true}}
+                >
                 <SwiperSlide>
                     <img src={shortsThumbnail1} alt="Shorts Thumbnail 1" className='w-[20rem] mb-[2rem] ml-[3rem]' />
                 </SwiperSlide>
@@ -114,7 +109,7 @@ const Reels = () => {
                     <img src={shortsThumbnail3} alt="Shorts Thumbnail 3" className='w-[20rem] mb-[2rem] ml-[3rem] mr-[15rem]' />
                 </SwiperSlide>
             </Swiper>
-        </div>
+        </>
     );
 };
 
