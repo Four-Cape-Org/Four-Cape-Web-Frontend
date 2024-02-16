@@ -1,5 +1,6 @@
 -------------- Primary ---------------
 
+> Fixing Work page
 > Making work page responsive
 > Fixing Home page minor issues
 > Properly building about us page
