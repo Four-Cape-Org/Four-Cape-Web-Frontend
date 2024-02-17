@@ -75,10 +75,14 @@ const Reels = () => {
           
                 <Swiper
                     modules={[Navigation, Pagination]}
-                    centeredSlides={true}
+                    // centeredSlides={true}
                     slidesPerView={1}
-                    spaceBetween={4}
+                    spaceBetween={20}
                     breakpoints={{
+                        500:{
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
                         640: {
                           slidesPerView: 2,
                           spaceBetween: 20,
@@ -98,22 +102,22 @@ const Reels = () => {
                     pagination={{clickable: true}}
                 >
                 <SwiperSlide className='my-10'>
-                    <img src={shortsThumbnail1} alt="Shorts Thumbnail 1" className='sm:w-[100%] w-[80%] mx-10' />
+                    <img src={shortsThumbnail1} alt="Shorts Thumbnail 1" className='max-[500px]:w-[70%] max-[640px]:w-[85%] mx-auto' />
                 </SwiperSlide>
                 <SwiperSlide className='my-10'>
-                    <img src={shortsThumbnail2} alt="Shorts Thumbnail 2" className='sm:w-[100%] w-[80%] mx-10' />
+                    <img src={shortsThumbnail2} alt="Shorts Thumbnail 2" className='max-[500px]:w-[70%] max-[640px]:w-[85%] mx-auto' />
                 </SwiperSlide>
                 <SwiperSlide className='my-10'>
-                    <img src={shortsThumbnail3} alt="Shorts Thumbnail 3" className='sm:w-[100%] w-[80%] mx-10' />
+                    <img src={shortsThumbnail3} alt="Shorts Thumbnail 3" className='max-[500px]:w-[70%] max-[640px]:w-[85%] mx-auto' />
                 </SwiperSlide>
                 <SwiperSlide className='my-10'>
-                    <img src={shortsThumbnail1} alt="Shorts Thumbnail 1" className='sm:w-[100%] w-[80%] mx-10' />
+                    <img src={shortsThumbnail1} alt="Shorts Thumbnail 1" className='max-[500px]:w-[70%] max-[640px]:w-[85%] mx-auto' />
                 </SwiperSlide>
                 <SwiperSlide className='my-10'>
-                    <img src={shortsThumbnail2} alt="Shorts Thumbnail 2" className='sm:w-[100%] w-[80%] mx-10' />
+                    <img src={shortsThumbnail2} alt="Shorts Thumbnail 2" className='max-[500px]:w-[70%] max-[640px]:w-[85%] mx-auto' />
                 </SwiperSlide>
                 <SwiperSlide className='my-10'>
-                    <img src={shortsThumbnail3} alt="Shorts Thumbnail 3" className='sm:w-[100%] w-[80%] mx-10' />
+                    <img src={shortsThumbnail3} alt="Shorts Thumbnail 3" className='max-[500px]:w-[70%] max-[640px]:w-[85%] mx-auto' />
                 </SwiperSlide>
             </Swiper>
         </>
