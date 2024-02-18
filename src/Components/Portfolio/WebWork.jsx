@@ -6,69 +6,36 @@ import Website3 from '../../assets/img/portfolio/web/website3.png'
 const WebWork = () => {
     return (
         <div>
-            <div>
-                <div className='w-[15rem] text-2xl font-semibold p-[5px] m-[6rem] mb-[2rem]'>
-                    <p className='text-red'>OUR WEB WORKS</p>
+
+            <h2 className='font-secondary lg:text-[4em] md:text-[3em] sm:text-[2em] text-[2em] mx-4 drop-shadow-xl text-center font-semibold underline'>Here goes our Web Work</h2>
+
+            <div className='flex flex-col justify-center items-center'>
+
+                <div className='flex sm:flex-row flex-col justify-center items-center px-8 my-[3em]'>
+                    <img src={Website1} alt="" className='md:w-[55%] sm:w-[60%] w-[95%] my-6 max-w-[40em]' />
+                    <div className='flex flex-col justify-center items-start sm:w-[40%] w-[90%] mx-[2em]'>
+                        <h2 className='font-secondary lg:text-[40px] md:text-[30px] sm:text-[20px] text-[30px] font-semibold'>Website Title | Four Cape</h2>
+                        <p className='font-primary lg:text-[18px] md:text-[15px] sm:text-[12px] text-[15px] sm:mt-[3rem] mt-[1em] text-text-color'>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
 
-                <div className='text-[5.4rem] underline font-semibold p-[5px]'>
-                    <p className='font-secondary text-center tracking-[1.5px] justify-center'>Here goes our Web Works</p>
+                <div className='flex sm:flex-row flex-col-reverse justify-center items-center px-8 my-[3em]'>
+                    <div className='flex flex-col justify-center items-start sm:w-[40%] w-[90%] mx-[2em]'>
+                        <h2 className='font-secondary lg:text-[40px] md:text-[30px] sm:text-[20px] text-[30px] font-semibold'>Website Title | Four Cape</h2>
+                        <p className='font-primary lg:text-[18px] md:text-[15px] sm:text-[12px] text-[15px] sm:mt-[3rem] mt-[1em] text-text-color'>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <img src={Website2} alt="" className='md:w-[55%] sm:w-[60%] my-6 w-[95%] max-w-[40em]' />
                 </div>
+
+                <div className='flex sm:flex-row flex-col justify-center items-center px-8 my-[3em]'>
+                    <img src={Website3} alt="" className='md:w-[55%] sm:w-[60%] w-[95%] my-6 max-w-[40em]' />
+                    <div className='flex flex-col justify-center items-start sm:w-[40%] w-[90%] mx-[2em]'>
+                        <h2 className='font-secondary lg:text-[40px] md:text-[30px] sm:text-[20px] text-[30px] font-semibold'>Website Title | Four Cape</h2>
+                        <p className='font-primary lg:text-[18px] md:text-[15px] sm:text-[12px] text-[15px] sm:mt-[3rem] mt-[1em] text-text-color'>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
             </div>
-
-            
-            {/* <div className='flex flex-row mt-[5rem] bg-black h-[35rem] w-[100vw]'>
-                <img src={Website1} alt="" className='w-[39.4rem] h-[25rem] m-[5rem]'/>
-                <div className='flex flex-col m-[2rem] mt-[5rem] '>
-                    <h2 className='font-secondary text-[4rem] font-semibold mr-5'>Website Title | Four Cape</h2>
-                    <p className='font-primary text-[1.8rem] mt-[2rem] text-text-color mr-[2.5rem]'>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-
-            <div className='flex flex-row mt-[5rem] h-[35rem] w-[100vw]'>
-    
-                <div className='flex flex-col m-[6rem] mt-[5rem] '>
-                    <h2 className='font-secondary text-[4rem] font-semibold mr-5'>Website Title | Four Cape</h2>
-                    <p className='font-primary text-[1.8rem] mt-[2rem] text-text-color mr-[2.5rem]'>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <img src={Website1} alt="" className='w-[39.4rem] h-[25rem] mr-[5rem]'/>
-            </div>
-
-            <div className='flex flex-row mt-[5rem] h-[35rem] w-[100vw]'>
-                <img src={Website1} alt="" className='w-[39.4rem] h-[25rem] m-[5rem]'/>
-                <div className='flex flex-col m-[2rem] mt-[5rem] '>
-                    <h2 className='font-secondary text-[4rem] font-semibold mr-5'>Website Title | Four Cape</h2>
-                    <p className='font-primary text-[1.8rem] mt-[2rem] text-text-color mr-[2.5rem]'>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div> */}
-
-
-
-            <div className='flex flex-row  m-[8rem]'>
-                <img src={Website1} alt="" className='w-[39.4rem]'/>
-                <div className='flex flex-col m-[4rem] mt-[1rem]'>
-                    <h2 className='font-secondary text-[3.5rem] font-semibold'>Website Title | Four Cape</h2>
-                    <p className='font-primary text-[1.4rem] mt-[2rem] text-text-color'>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-
-            <div className='flex flex-row  m-[8rem]'>
-                <div className='flex flex-col m-[3rem] mt-[1rem]'>
-                    <h2 className='font-secondary text-[3.5rem] font-semibold'>Website Title | Four Cape</h2>
-                    <p className='font-primary text-[1.4rem] mt-[2rem] text-text-color'>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-
-                <img src={Website2} alt="" className='w-[39.4rem]'/>
-            </div>
-
-            <div className='flex flex-row  m-[8rem]'>
-                <img src={Website3} alt="" className='w-[39.4rem]'/>
-                <div className='flex flex-col m-[4rem] mt-[1rem]'>
-                    <h2 className='font-secondary text-[3.5rem] font-semibold'>Website Title | Four Cape</h2>
-                    <p className='font-primary text-[1.4rem] mt-[2rem] text-text-color'>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-
         </div>
     )
 }
