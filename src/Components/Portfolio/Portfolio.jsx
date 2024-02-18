@@ -24,11 +24,14 @@ const Portfolio = () => {
         </div>
         <ShowReel/>
         <div className='sm:mt-[13em] mt-[10em]'>
-          <h2 className='text-red sm:text-[30px] text-[23px] font-bold px-[2em] my-[2rem] text-center'>OUR EDITS</h2>
+          <h2 className='text-red sm:text-[30px] text-[23px] font-bold px-[2em] my-[2rem] text-center'>VIDEO EDITS</h2>
           <Reels/>
           <Youtube/>
         </div>
-        <Design/>
+        <div className='sm:mt-[13em] mt-[10em]'>
+          <h2 className='text-red sm:text-[30px] text-[23px] font-bold px-[2em] my-[2rem] text-center'>GRAPHIC DESIGNS</h2>
+          <Design/>
+        </div>
         <div className='sm:mt-[13em] mt-[10em]'>
           <h2 className='text-red sm:text-[30px] text-[23px] font-bold px-[2em] my-[2rem] text-center'>WEB DESIGN & DEVELOPMENT</h2>
           <WebWork/>
