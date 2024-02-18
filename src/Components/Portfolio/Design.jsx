@@ -16,7 +16,7 @@ const Design = () => {
             id: 1,
             img: DesignGallary1,
             title: "Title 1",
-            desc: "Description 1",
+            desc: "Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             link: "",
         },
         {
@@ -96,7 +96,7 @@ const Design = () => {
                 <div className='fixed top-0 left-0 w-screen h-screen bg-[black] z-[1999]'>
                     <button className='fixed top-10 right-10 z-[2000] text-[white] text-[30px] bg-[#00000083] px-[14px] py-[3px] rounded-full' onClick={() => {setShowImg(null)}}><i class="fa-solid fa-xmark"></i></button>
                     <div className='flex justify-center items-center w-[100%] h-[70vh]'>
-                        <img src={showImg.img} alt="" className='h-[100%]' />
+                        <img src={showImg.img} alt="" className='h-auto max-h-[70vh]' />
                     </div>
                     <div className='bg-[white] flex flex-col px-10 py-10 overflow-scroll h-[40vh]'>
                         <h2 className='text-[#000000] font-secondary lg:text-[40px] md:text-[30px] sm:text-[20px] text-[30px] font-semibold'>{showImg.title}</h2>
