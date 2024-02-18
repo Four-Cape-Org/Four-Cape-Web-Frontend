@@ -1,10 +1,11 @@
 -------------- Primary ---------------
 
-> Fixing Work page
-> Making work page responsive
+> Fixing Work page - (Completed)
+> Making work page responsive - (Almost Done)
 > Fixing Home page minor issues
 > Properly building about us page
 > Properly building services page
+> Making Contact Page Responsive
 > Making 404 page responsive
 > Making Forms work
 > Updating all Links (Third Party and local links)
