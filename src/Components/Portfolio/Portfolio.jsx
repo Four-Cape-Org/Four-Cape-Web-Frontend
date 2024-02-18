@@ -28,9 +28,11 @@ const Portfolio = () => {
           <Reels/>
           <Youtube/>
         </div>
-        
         <Design/>
-        <WebWork/>
+        <div className='sm:mt-[13em] mt-[10em]'>
+          <h2 className='text-red sm:text-[30px] text-[23px] font-bold px-[2em] my-[2rem] text-center'>WEB DESIGN & DEVELOPMENT</h2>
+          <WebWork/>
+        </div>
         <BookCall bookCallRef={bookCallRef}/>
         <JumboButton link="/" spanText="Got a Project ?" title="Tell us Everything." />
         <Footer bookCallRef={bookCallRef}/>
