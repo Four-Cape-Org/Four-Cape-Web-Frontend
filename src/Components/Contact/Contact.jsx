@@ -20,8 +20,8 @@ const Contact = () => {
         <Navbar  bookCallRef={bookCallRef}/>
         <section className='relative'>
 
-          <OverlayText className="absolute top-0 left-10 z-[0] text-[20em]" text="Contact Us" />
-          <div className='relative pt-[19em] pb-[3em]'>
+          <OverlayText className="absolute top-0 lg:left-10 md:left-7 sm:left-5 left-3 z-[0] text-[14vw] max-[1250px]:text-[16vw]" text="Contact Us" />
+          <div className='relative lg:pt-[15em] md:pt-[7em] sm:pt-[7em] pt-[5em] pb-[3em]'>
             <h4 className='text-accent-color font-bold font-primary text-[20px] my-[10px] text-center'>Have a Question ?</h4>
             <p className='font-primary text-[15px] w-[45%] my-[20px] mx-auto text-center'>Thank you for your interest in our services. Please fill out the form below or E-Mail us at <Link to="" className="text-accent-color hover:underline font-semibold">fourcape@gmail.com</Link> and we will get to you promptly regarding your request.</p>
 

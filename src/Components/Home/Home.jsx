@@ -22,7 +22,7 @@ const Home = () => {
       <ServiceSection />
       <BookCall  bookCallRef={bookCallRef}/>
       <ClientReview />
-      <JumboButton link="/" spanText="Got a Project ?" title="Tell us Everything." />
+      <JumboButton link="/contact" spanText="Got a Project ?" title="Tell us Everything." />
       <Footer bookCallRef={bookCallRef}/>
     </>
   )
