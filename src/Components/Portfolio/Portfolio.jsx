@@ -37,7 +37,7 @@ const Portfolio = () => {
           <WebWork/>
         </div>
         <BookCall bookCallRef={bookCallRef}/>
-        <JumboButton link="/" spanText="Got a Project ?" title="Tell us Everything." />
+        <JumboButton link="/contact" spanText="Got a Project ?" title="Tell us Everything." />
         <Footer bookCallRef={bookCallRef}/>
     </>
   )
