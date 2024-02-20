@@ -3,10 +3,10 @@
 > Fixing Work page - (Completed)
 > Making work page responsive - (Completed)
 > Fixing Home page minor issues
-> Properly building about us page
+> Properly building about us page (Assigned)
 > Properly building services page
 > Making Contact Page Responsive (Completed)
-> Making 404 page responsive
+> Making 404 page responsive (Assigned)
 > Making Forms work
 > Updating all Links (Third Party and local links)
 > Adding Actual Content
