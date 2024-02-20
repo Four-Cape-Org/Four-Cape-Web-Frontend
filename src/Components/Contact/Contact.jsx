@@ -19,7 +19,7 @@ const Contact = () => {
     <>
         <Navbar  bookCallRef={bookCallRef}/>
         <section className='relative'>
-
+        Adding Animations
           <OverlayText className="absolute top-0 lg:left-10 md:left-7 sm:left-5 left-3 z-[0] text-[14vw] max-[1250px]:text-[16vw]" text="Contact Us" />
           <div className='relative lg:pt-[15em] md:pt-[7em] sm:pt-[7em] pt-[5em] pb-[3em]'>
             <h4 className='text-accent-color font-bold font-primary text-[20px] my-[10px] text-center'>Have a Question ?</h4>
