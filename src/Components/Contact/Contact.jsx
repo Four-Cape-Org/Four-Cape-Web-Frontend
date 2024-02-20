@@ -36,13 +36,18 @@ const Contact = () => {
                   <h3 className='text-[25px] font-semibold'>GET IN TOUCH:</h3>
 
                   <ul className='flex flex-col justify-start items-start pl-[20px] py-[15px]'>
-                      <li className='flex justify-center items-center my-[10px]'>
-                          <img src={callIcon} className='mr-[10px]' alt="" />
-                          <span>+91 88990 60179</span>
+                      <li className='my-[10px]'>
+                          <Link to="/" className='flex justify-center items-center my-[10px]'>
+                            <img src={callIcon} className='mr-[10px]' alt="" />
+                            <span>+91 88990 60179</span>
+                          </Link>
                       </li>
-                      <li className='flex justify-center items-center my-[10px]'>
-                      <img src={emailIcon} className='mr-[10px]' alt="" />
+                      <li className='my-[10px]'>
+                        <Link to="/" className='flex justify-center items-center' >
+                          <img src={emailIcon} className='mr-[10px]' alt="" />
                           <span>fourcape@gmail.com</span>
+                        </Link>
+                      
                       </li>
                   </ul>
 
