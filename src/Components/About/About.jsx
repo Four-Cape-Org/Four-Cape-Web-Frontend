@@ -6,9 +6,11 @@ import BookCall from '../BookCall'
 import OverlayText from '../Elements/OverlayText'
 import JumboButton from '../Elements/JumboButton'
 import AboutHero from './AboutHero'
+import WhoAreWe from './WhoAreWe'
+import QuoteSection from './QuoteSection'
 
 // Image imports
-import SetupImg from '../../assets/img/about/setupImg.jpg'
+
 
 
 const About = () => {
@@ -28,34 +30,10 @@ const About = () => {
       </section>
 
       <AboutHero />
-
-      <section className='relative w-screen mt-[8em] h-fit'>
-        <img src={SetupImg} className='w-full blur-sm' alt="" />
-
-        <div className='absolute top-[50%] translate-y-[-50%] bg-[#00000070] h-[90%] lg:w-[50%] md:w-[90%] lg:ml-[4em] left-[50%] lg:left-0 lg:translate-x-0 translate-x-[-50%] rounded-3xl'>
-
-        </div>
-
-      </section>
-
+      <WhoAreWe />
       <BookCall  bookCallRef={bookCallRef}/>
       <JumboButton link="/contact" spanText="Got a Project ?" title="Tell us Everything." />
-
-
-      <div className='my-[6em]'>
-        <hr className='w-[85%] mx-auto text-[white]' />
-
-        <div className='w-screen my-[4em]'>
-          <p className='w-[90%] italic text-[50px] text-[white] text-center mx-auto font-secondary'>If you don’t build your dream, <br /> someone else will hire you to help them build theirs.</p>
-          <div className='flex justify-end items-center w-[80%]'>
-            <span className='italic font-semibold text-[20px] text-accent-color text-center font-primary my-4'>~ Dhirubhai Ambani <br /> Founder, Reliance Industries</span>
-          </div>
-        </div>
-
-        <hr className='w-[85%] mx-auto text-[white]' />
-      </div>
-      
-
+      <QuoteSection />
       <Footer bookCallRef={bookCallRef}/>
     </>
   )
