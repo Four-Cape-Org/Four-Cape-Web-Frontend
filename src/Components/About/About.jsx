@@ -6,6 +6,11 @@ import BookCall from '../BookCall'
 import OverlayText from '../Elements/OverlayText'
 import JumboButton from '../Elements/JumboButton'
 import AboutHero from './AboutHero'
+import WhoAreWe from './WhoAreWe'
+import QuoteSection from './QuoteSection'
+
+// Image imports
+
 
 
 const About = () => {
@@ -25,9 +30,10 @@ const About = () => {
       </section>
 
       <AboutHero />
-
+      <WhoAreWe />
       <BookCall  bookCallRef={bookCallRef}/>
       <JumboButton link="/contact" spanText="Got a Project ?" title="Tell us Everything." />
+      <QuoteSection />
       <Footer bookCallRef={bookCallRef}/>
     </>
   )
