@@ -40,6 +40,22 @@ const About = () => {
 
       <BookCall  bookCallRef={bookCallRef}/>
       <JumboButton link="/contact" spanText="Got a Project ?" title="Tell us Everything." />
+
+
+      <div className='my-[6em]'>
+        <hr className='w-[85%] mx-auto text-[white]' />
+
+        <div className='w-screen my-[4em]'>
+          <p className='w-[90%] italic text-[50px] text-[white] text-center mx-auto font-secondary'>If you don’t build your dream, <br /> someone else will hire you to help them build theirs.</p>
+          <div className='flex justify-end items-center w-[80%]'>
+            <span className='italic font-semibold text-[20px] text-accent-color text-center font-primary my-4'>~ Dhirubhai Ambani <br /> Founder, Reliance Industries</span>
+          </div>
+        </div>
+
+        <hr className='w-[85%] mx-auto text-[white]' />
+      </div>
+      
+
       <Footer bookCallRef={bookCallRef}/>
     </>
   )
