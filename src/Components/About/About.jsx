@@ -7,6 +7,9 @@ import OverlayText from '../Elements/OverlayText'
 import JumboButton from '../Elements/JumboButton'
 import AboutHero from './AboutHero'
 
+// Image imports
+import SetupImg from '../../assets/img/about/setupImg.jpg'
+
 
 const About = () => {
 
@@ -25,6 +28,15 @@ const About = () => {
       </section>
 
       <AboutHero />
+
+      <section className='relative w-screen mt-[8em] h-fit'>
+        <img src={SetupImg} className='w-full blur-sm' alt="" />
+
+        <div className='absolute top-[50%] translate-y-[-50%] bg-[#00000070] h-[90%] lg:w-[50%] md:w-[90%] lg:ml-[4em] left-[50%] lg:left-0 lg:translate-x-0 translate-x-[-50%] rounded-3xl'>
+
+        </div>
+
+      </section>
 
       <BookCall  bookCallRef={bookCallRef}/>
       <JumboButton link="/contact" spanText="Got a Project ?" title="Tell us Everything." />
