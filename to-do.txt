@@ -1,12 +1,10 @@
 -------------- Primary ---------------
 
-> Fixing Work page - (Completed)
-> Making work page responsive - (Completed)
-> Fixing Home page minor issues
-> Properly building about us page (Assigned)
-> Properly building services page
-> Making Contact Page Responsive (Completed)
-> Making 404 page responsive (Assigned)
+> Improvments in Home Page
+> Fix Hamburger Icon on Page Change
+> Building about us page
+> Building services Page
+> Making 404 page responsive
 > Making Forms work
 > Updating all Links (Third Party and local links)
 > Adding Actual Content

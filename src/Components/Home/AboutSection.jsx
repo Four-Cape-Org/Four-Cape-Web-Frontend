@@ -9,14 +9,14 @@ const AboutSection = (props) => {
   
   return (
     <>
-      <div className='relative mt-[6em]'>
+      <div className='relative mt-[7em]'>
         <OverlayText className="absolute top-[-50px] left-10 z-[0] text-[20vw] max-[1250px]:text-[18vw] max-[550px]:left-3" text="About" />
-        <div className='relative w-screen flex justify-end items-center pt-[4em] sm:pt-[7em] md:pt-[10em] lg:pt-[17em] pb-[10em]'>
-            <img src={AboutImg} className='w-screen blur-[3px] brightness-50 lg:w-[80%] md:w-screen md:brightness-25' alt="" />
+        <div className='relative w-screen flex justify-end items-center pt-[4em] sm:pt-[7em] md:pt-[10em] lg:pt-[17em] pb-[7em]'>
+            <img src={AboutImg} className='h-[30em] aspect-video sm:aspect-auto blur-[3px] brightness-50 lg:w-[80%] md:w-screen md:brightness-25' alt="" />
             <div className='absolute top-[10%] sm:top-[10%] md:top-[30%] flex flex-col justify-center items-start w-[95%] sm:w-[90%] md:w-[80%] lg:w-[60%] lg:left-[10em] md:left-[6em] sm:left-[3em] left-[1em]'>
                 <p className='text-accent-color font-bold font-primary text-[15px] sm:text-[15px] md:text-[20px] my-[10px]'>About Us</p>
-                <h2 className='font-secondary lg:text-[4em] md:text-[3em] sm:text-[2em] text-[1.5em] sm:font-normal font-semibold drop-shadow-xl'>We are a Boston based Marketing Agency, started in 2014</h2>
-                <p className='font-primary text-[12px] w-[95%] my-[20px] lg:w-[70%] md:w-[80%] sm:w-[90%] sm:text-[15px] sm:font-normal font-semibold'>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
+                <h2 className='font-secondary lg:text-[3em] md:text-[2em] sm:text-[2em] text-[1.5em] sm:font-normal font-semibold drop-shadow-xl'>"Driven by creativity and expertise, we are a design and marketing agency where skilled professionals bring your brand's vision to life."</h2>
+                <p className='font-primary text-[12px] w-[95%] my-[20px] lg:w-[70%] md:w-[80%] sm:w-[90%] sm:text-[15px] sm:font-normal font-semibold'>""We combine creative design with strategic marketing to bring your brand's vision to life. Our skilled team is committed to delivering impactful results that resonate with your audience."</p>
                 <BubbleButtonSecondary className='my-[32px]' sendTo='/about' text='LEARN MORE' />
             </div>
         </div>

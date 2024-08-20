@@ -6,6 +6,8 @@ const BookCall = ({bookCallRef}) => {
 
     const formInputStyle = `w-[100%] bg-[transparent] py-[10px] px-[15px] mb-[15px] placeholder:text-[#484848] placeholder:text-[13px] text-[17px] text-[black] rounded-md border-[1px] border-[#484848] outline-none`
 
+  const today = new Date().toISOString().split("T")[0]; // For the date input
+
   return (
     <div className='bg-[#953F66] flex justify-center items-center flex-wrap  py-[4em] mt-[5em]' ref={bookCallRef}>
         <div className='lg:w-[30%] md:w-[70%] sm:w-[90%] w-[100%] mx-2 flex lg:flex-col md:flex-row sm:flex-row flex-col justify-center sm:items-start items-center'>
@@ -43,7 +45,7 @@ const BookCall = ({bookCallRef}) => {
 
                 <div className='flex flex-col justify-center items-start sm:w-[90%] w-[95%] my-[15px] mx-auto'>
                     <label htmlFor="date" className='text-[#484848] text-[15px] font-semibold mb-[5px]'>Your Preffered Date: <span className='text-[red]'>*</span></label>
-                    <input type="date" name='date' placeholder="dd/mm/yyyy" className={formInputStyle} />
+                   <input type="date" name='date' placeholder="dd/mm/yyyy" className={formInputStyle} min={today} />
                 </div>
 
                 <div className='flex flex-col justify-center items-start sm:w-[90%] w-[95%] my-[15px] mx-auto'>
