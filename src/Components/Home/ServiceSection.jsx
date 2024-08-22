@@ -66,7 +66,7 @@ const ServiceSection = () => {
                     <img src={MerchDesignImg} className='h-[25em] w-[21em] border-[10px] border-[white] shadow-2xl' alt="Merchandise Design" />
                     <div className="flex flex-col justify-center items-start w-[88%] mt-[40px]">
                         <h5 className='text-[2em] font-secondary font-semibold drop-shadow-xl'>Merchandise Designs</h5>
-                        <p className='text-[#C9C9C9] font-primary text-[16px] my-[10px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, ex! Lorem ipsum dolor sit amet.</p>
+                        <p className='text-[#C9C9C9] font-primary text-[16px] my-[10px]'>Transform your brand into tangible products like custom apparel, promotional items, and exclusive merchandise that resonate with your audience and boost brand loyalty.</p>
                         <BubbleButtonPrimary className='my-[32px]' sendTo='/about' text='LEARN MORE' />
                     </div>
                 </div>
