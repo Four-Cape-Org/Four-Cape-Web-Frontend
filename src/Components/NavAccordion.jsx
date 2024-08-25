@@ -14,25 +14,25 @@ const NavAccordion = ({navAccordionState, setNavAccordionState, handleNavAccordi
     <div className={`${navAccordionState} w-screen`}>
         <ul className="flex flex-col justify-center items-center min-[1000px]:hidden w-[100%]">
             <li className='border-[1px] border-[white] w-[100%]'>
-                <Link to="/" onClick={setAccordionState} className="inline-block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/">Home</Link>
+                <Link to="/" onClick={setAccordionState} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/">Home</Link>
             </li>
             <li  className='border-[1px] border-[white] w-[100%]'>
-                <Link to="/portfolio" onClick={setAccordionState} className="inline-block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/work">Our Work</Link>
+                <Link to="/portfolio" onClick={setAccordionState} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/work">Our Work</Link>
             </li>
             <li  className='border-[1px] border-[white] w-[100%]'>
-                <Link to="/about" onClick={setAccordionState} className="inline-block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/about">About Us</Link>
+                <Link to="/about" onClick={setAccordionState} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/about">About Us</Link>
             </li>
             <li  className='border-[1px] border-[white] w-[100%]'>
-                <Link to="/services" onClick={setAccordionState} className="inline-block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/services">Services</Link>
+                <Link to="/services" onClick={setAccordionState} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/services">Services</Link>
             </li>
             <li  className='border-[1px] border-[white] w-[100%]'>
-                <Link to="/contact" onClick={setAccordionState} className="inline-block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/contact">Contact</Link>
+                <Link to="/contact" onClick={setAccordionState} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/contact">Contact</Link>
             </li>
             <li  className='border-[1px] border-[white] w-[100%]'>
                 <Link onClick={() => {
                     scrollToElement(bookCallRef);
                     handleNavAccordion();
-                }} className="inline-block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/contact">Book a call</Link>
+                }} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/contact">Book a call</Link>
             </li>
         </ul>
     </div>
