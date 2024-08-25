@@ -1,7 +1,6 @@
 -------------- Primary ---------------
 
 > Improvments in Home Page
-> Fix Hamburger Icon on Page Change
 > Building about us page
 > Building services Page
 > Making 404 page responsive
