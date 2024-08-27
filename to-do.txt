@@ -1,7 +1,6 @@
 -------------- Primary ---------------
 
 > Improvments in Home Page
-> Building about us page
 > Building services Page
 > Making 404 page responsive
 > Making Forms work
