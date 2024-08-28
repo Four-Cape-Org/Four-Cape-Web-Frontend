@@ -26,7 +26,7 @@ function TextWithLineBreaks(props) {
 
 const ServiceCard = (props) => {
   return (
-      <div className={"flex justify-start items-start w-[90%] rounded-[20px] my-[2em]"+props.className}>
+      <div className={"flex justify-start items-start w-[90%] rounded-[20px] my-[2em] "+props.className}>
         <div className="flex justify-center items-center h-full rounded-[20px]">
           <img src={props.image} alt={props.altText} className="w-[30em] object-cover rounded-[20px]" />
         </div>
@@ -60,7 +60,7 @@ const ServiceCards = () => {
       {
         ServiceData.map((service) => {
           return (
-            <ServiceCard key={service.id} className="even:flex-row-reverse" title={service.title} description={service.description} image={service.image} altText={service.altText} offers={service.offers} />
+            <ServiceCard key={service.id} className="even:flex-row-reverse even:justify-end" title={service.title} description={service.description} image={service.image} altText={service.altText} offers={service.offers} />
           )
         })
       }
