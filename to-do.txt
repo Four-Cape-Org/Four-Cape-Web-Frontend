@@ -1,12 +1,13 @@
 -------------- Primary ---------------
 
-> Improvments in Home Page
-> Building services Page
+> Improving services Page
 > Making 404 page responsive
 > Making Forms work
 > Updating all Links (Third Party and local links)
 > Adding Actual Content
-
+> Footer quick links
+> Add Animations
+> Add a svg explaining the CAPE
 -------------- Secondary ---------------
 
 > Showing Active Page on Nav Menu

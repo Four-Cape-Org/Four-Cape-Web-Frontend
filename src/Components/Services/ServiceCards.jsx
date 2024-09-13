@@ -28,7 +28,7 @@ const ServiceCard = (props) => {
   return (
       <div className={"flex justify-start items-start w-[80%] rounded-[20px] my-[2em] "+props.className}>
         <div className="flex justify-center items-center h-full rounded-[20px]">
-          <img src={props.image} alt={props.altText} className="w-[30em] object-cover rounded-[20px]" />
+          <img src={props.image} alt={props.altText} className="w-[30em] object-cover rounded-[20px] border-[7px] border-[white]" />
         </div>
         <div className="w-full px-[18px]">
           <h2 className="font-primary text-[25px] font-bold text-accent-color">{props.title}</h2>

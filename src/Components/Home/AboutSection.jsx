@@ -29,9 +29,9 @@ const AboutSection = (props) => {
               life."
             </h2>
             <p className="font-primary text-[12px] w-[95%] my-[20px] lg:w-[70%] md:w-[80%] sm:w-[90%] sm:text-[15px] sm:font-normal font-semibold">
-              ""We combine creative design with strategic marketing to bring
+              We combine creative design with strategic marketing to bring
               your brand's vision to life. Our skilled team is committed to
-              delivering impactful results that resonate with your audience."
+              delivering impactful results that resonate with your audience.
             </p>
             <BubbleButtonSecondary
               className="my-[32px]"

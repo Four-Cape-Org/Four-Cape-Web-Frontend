@@ -10,7 +10,7 @@ const serviceData = [
   {
     id: 1,
     title: 'Social Media & Digital Content Design',
-    description: `Ready to make some noise online? At Fourcape, we create scroll-stopping content that makes your brand impossible to ignore! 🚀 From eye-catching graphics to snappy videos, we design digital content that speaks your brand’s language and keeps your audience coming back for more. Whether it’s crafting the perfect Instagram grid or building an engaging ad campaign, we’ve got you covered. 🎯✨
+    description: `Ready to make some noise online? At Fourcape, we create scroll-stopping content that makes your brand impossible to ignore! 🚀 From eye-catching graphics to snappy videos, we design digital content that speaks your brand’s language and keeps your audience coming back for more. Whether it’s crafting the perfect Instagram grid or building an engaging ad campaign, we’ve got you covered. 🎯✨<br/><br/>
 
 Our secret sauce? A mix of creativity, strategy, and a deep understanding of what makes your audience hit that 'like' button. 👍 Let’s make your social feeds a vibrant reflection of your brand's awesomeness—one post at a time! 📸💬`,
     image: socialContent,
