@@ -58,12 +58,12 @@ const Navbar = ({bookCallRef, buttonVisible = true}) => {
             : null}
 
             <button onClick={handleNavAccordion} className='flex flex-col justify-center hover:text-accent-color duration-200 text-[white] text-[23px] items-center h-[40px] w-[40px] mx-6 min-[1001px]:hidden'>
-                <i class={`fa-solid ${hamIcon}`}></i>
+                <i className={`fa-solid ${hamIcon}`}></i>
             </button>
         </div>
 
     </nav>
-    <NavAccordion navAccordionState={navAccordionState} setNavAccordionState={setNavAccordionState} handleNavAccordion={handleNavAccordion} scrollToElement={scrollToElement} bookCallRef={bookCallRef} />
+    <NavAccordion navAccordionState={navAccordionState} setNavAccordionState={setNavAccordionState} handleNavAccordion={handleNavAccordion} scrollToElement={scrollToElement} setHamIcon={setHamIcon} bookCallRef={bookCallRef} />
     </>
   )
 }

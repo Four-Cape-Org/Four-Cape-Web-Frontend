@@ -6,12 +6,14 @@ const BookCall = ({bookCallRef}) => {
 
     const formInputStyle = `w-[100%] bg-[transparent] py-[10px] px-[15px] mb-[15px] placeholder:text-[#484848] placeholder:text-[13px] text-[17px] text-[black] rounded-md border-[1px] border-[#484848] outline-none`
 
+  const today = new Date().toISOString().split("T")[0]; // For the date input
+
   return (
     <div className='bg-[#953F66] flex justify-center items-center flex-wrap  py-[4em] mt-[5em]' ref={bookCallRef}>
         <div className='lg:w-[30%] md:w-[70%] sm:w-[90%] w-[100%] mx-2 flex lg:flex-col md:flex-row sm:flex-row flex-col justify-center sm:items-start items-center'>
             <div className='sm:block sm:flex-none flex flex-col justify-center items-center lg:w-[100%] md:w-[50%] sm:w-[50%] w-[95%]'>
                 <h3 className='text-primary text-[white] sm:text-[25px] text-[18px] font-semibold'>Lets Build Together.</h3>
-                <p className='text-[#cacaca] sm:text-[15px] text-[12px] w-[75%] my-[10px] sm:text-left text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum ex voluptatibus ipsa maxime, nostrum magni id corporis doloribus eveniet.</p>
+                <p className='text-[#cacaca] sm:text-[15px] text-[12px] w-[75%] my-[10px] sm:text-left text-center'>Let’s bring your ideas to life! Whether you need brand strategy, design, or just some creative advice, we’re here to help. Schedule a quick call with our team, and let’s start building something amazing together!</p>
             </div>
             <img src={BookCallImg} className="lg:w-[80%] md:w-[50%] sm:w-[40%] w-[40%] lg:my-[3em]" alt="Book a call" />
         </div>
@@ -41,10 +43,23 @@ const BookCall = ({bookCallRef}) => {
                     <input type="email" name='email' placeholder="example@gmail.com" className={formInputStyle} />
                 </div>
 
+
+                <div className='flex flex-col justify-center items-start sm:w-[90%] w-[95%] my-[15px] mx-auto'>
+                    <label htmlFor="phone" className='text-[#484848] text-[15px] font-semibold mb-[5px]'>Your Phone Number: <span className='text-[red]'>*</span></label>
+                    <input type="tel" name='phone' placeholder="Phone Number" className={formInputStyle} />
+                </div>
+
+
                 <div className='flex flex-col justify-center items-start sm:w-[90%] w-[95%] my-[15px] mx-auto'>
                     <label htmlFor="date" className='text-[#484848] text-[15px] font-semibold mb-[5px]'>Your Preffered Date: <span className='text-[red]'>*</span></label>
-                    <input type="date" name='date' placeholder="dd/mm/yyyy" className={formInputStyle} />
+                   <input type="date" name='date' placeholder="dd/mm/yyyy" className={formInputStyle} min={today} />
                 </div>
+
+                <div className='flex flex-col justify-center items-start sm:w-[90%] w-[95%] my-[15px] mx-auto'>
+                    <label htmlFor="subject" className='text-[#484848] text-[15px] font-semibold mb-[5px]'>Subject: <span className='text-[red]'>*</span></label>
+                    <input type="text" name='subject' placeholder="Subject" className={formInputStyle} />
+                </div>
+
 
                 <div className='flex flex-col justify-center items-start sm:w-[90%] w-[95%] my-[15px] mx-auto'>
                     <label htmlFor="msg" className='text-[#484848] text-[15px] font-semibold mb-[5px]'>Your Message:</label>
