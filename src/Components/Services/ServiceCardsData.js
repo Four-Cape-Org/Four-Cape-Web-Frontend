@@ -10,11 +10,12 @@ const serviceData = [
   {
     id: 1,
     title: 'Social Media & Digital Content Design',
-    description: `Ready to make some noise online? At Fourcape, we create scroll-stopping content that makes your brand impossible to ignore! 🚀 From eye-catching graphics to snappy videos, we design digital content that speaks your brand’s language and keeps your audience coming back for more. Whether it’s crafting the perfect Instagram grid or building an engaging ad campaign, we’ve got you covered. 🎯✨<br/><br/>
+    description: `Ready to make some noise online? At Fourcape, we create scroll-stopping content that makes your brand impossible to ignore! 🚀 From eye-catching graphics to snappy videos, we design digital content that speaks your brand’s language and keeps your audience coming back for more. Whether it’s crafting the perfect Instagram grid or building an engaging ad campaign, we’ve got you covered. 🎯
 
 Our secret sauce? A mix of creativity, strategy, and a deep understanding of what makes your audience hit that 'like' button. 👍 Let’s make your social feeds a vibrant reflection of your brand's awesomeness—one post at a time! 📸💬`,
     image: socialContent,
     altText: 'Social Media',
+    price: 'Starting at $500',
     offers: ['Offer 1', 'Offer 2', 'Offer 3'],
   },
   {
@@ -25,6 +26,7 @@ Our secret sauce? A mix of creativity, strategy, and a deep understanding of wha
 Our design process? It’s a blend of art and science—balancing aesthetics with functionality to ensure every interaction with your brand feels like a breeze. 🌬️ Let’s turn your digital platform into an experience your users will love—one that’s as easy to navigate as it is beautiful to behold. 🎯🖌️`,
     image: uiDesign,
     altText: 'UI/UX Design',
+    price: 'Starting at $500',
     offers: ['Offer 1', 'Offer 2', 'Offer 3'],
   },
   {
@@ -35,6 +37,7 @@ Our design process? It’s a blend of art and science—balancing aesthetics wit
 Our approach? We dig deep to understand your brand’s essence and create a cohesive identity that reflects who you are. Whether you're bold and edgy or sleek and sophisticated, we'll design a brand identity that leaves a lasting impression. 🚀🔗 Let's make your brand unforgettable—one design element at a time! 🎨🖌️`,
     image: brandDesign,
     altText: 'Brand Identity',
+    price: 'Starting at $500',
     offers: ['Offer 1', 'Offer 2', 'Offer 3'],
   },
   {
@@ -45,6 +48,7 @@ Our approach? We dig deep to understand your brand’s essence and create a cohe
 Whether it’s eco-friendly packaging that aligns with your values or bold prints that scream your brand’s message, we’ve got you covered. 🌍🔊 Our mission? To make your products look so good that customers can’t resist picking them up—again and again. 🚀💡 Let’s wrap your brand in creativity and style!`,
     image: printDesign,
     altText: 'Packaging Design',
+    price: 'Starting at $500',
     offers: ['Offer 1', 'Offer 2', 'Offer 3'],
   },
   {
@@ -55,6 +59,7 @@ Whether it’s eco-friendly packaging that aligns with your values or bold print
 Our secret? Blending creativity with style, so your merch stands out and becomes a statement piece. Whether it’s sleek and minimal or bold and colorful, we’ll help you create designs that people will want to rock. 🎯💥 Let’s transform your brand into must-have merch that fans can’t get enough of! 🛒✨`,
     image: merchDesigns,
     altText: 'Service 5',
+    price: 'Starting at $500',
     offers: ['Offer 1', 'Offer 2', 'Offer 3'],
   },
   {
@@ -65,6 +70,7 @@ Our secret? Blending creativity with style, so your merch stands out and becomes
 Our approach? We blend creativity with cutting-edge technology to create sites that not only look amazing but also work flawlessly on every device. 📱💻 From smooth navigation to pixel-perfect visuals, we’ll make sure your website is fast, responsive, and totally on-brand. 🚀🔗 Let’s build a web presence that your audience won’t forget—one click at a time!`,
     image: 'https://via.placeholder.com/300',
     altText: 'Service 6',
+    price: 'Starting at $500',
     offers: ['Offer 1', 'Offer 2', 'Offer 3'],
   },
   {
@@ -75,6 +81,7 @@ Our approach? We blend creativity with cutting-edge technology to create sites t
 Our team mixes creativity with precision, making sure every frame counts. From slick transitions to vibrant animations, we’ll turn your ideas into dynamic content that grabs attention and leaves a lasting impact. 🚀💥 Let’s make your brand move in all the right ways—one stunning visual at a time! 🎯🎨`,
     image: 'https://via.placeholder.com/300',
     altText: 'Service 7',
+    price: 'Starting at $500',
     offers: ['Offer 1', 'Offer 2', 'Offer 3'],
   }
 ];
