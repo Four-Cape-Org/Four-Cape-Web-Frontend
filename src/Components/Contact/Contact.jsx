@@ -1,5 +1,8 @@
 import React, {useRef} from 'react'
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom'
+
 import Navbar from '../Navbar'
 import Footer from '../Footer'
 import BookCall from '../BookCall'
@@ -12,8 +15,29 @@ import emailIcon from '../../assets/img/general/footer/EmailIcon.svg'
 const Contact = () => {
 
   const bookCallRef = useRef(null);
+  const contactForm = useRef()
 
   const formInputStyle = `w-[100%] bg-[transparent] py-[10px] px-[15px] mb-[15px] placeholder:text-[#484848] placeholder:text-[13px] text-[17px] text-[black] rounded-md border-[1px] border-[#484848] outline-none`
+
+  const contactHandler = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_hie89ok', 'template_tavsp8l', contactForm.current, {
+        publicKey: 'ATz80OS2k1g-1j7Vh',
+      })
+      .then(
+        () => {
+          toast.success('Message sent successfully!');
+          contactForm.current.reset();
+        },
+        (error) => {
+          toast.error('Failed to send message!');
+          console.log('FAILED...', error.text);
+        },
+      );
+
+  }
 
   return (
     <>
@@ -59,35 +83,35 @@ const Contact = () => {
 
                 <h3 className='text-primary text-[#000000] text-[35px] font-bold mb-[15px]'>Talk to Us : </h3>
                 
-                <form action="" className='w-[100%] flex flex-col justify-center items-center'>
+                <form onSubmit={contactHandler} ref={contactForm} className='w-[100%] flex flex-col justify-center items-center'>
 
                   <div className='flex flex-col justify-center items-start md:w-[75%] sm:w-[85%] w-[85%] my-[15px] mx-auto'>
                       <label htmlFor="username" className='text-[#484848] text-[15px] font-semibold mb-[5px]'>Your Name: <span className='text-[red]'>*</span></label>
-                      <input type="text" name='username' placeholder="Name" className={formInputStyle} />
+                      <input type="text" name='username' placeholder="Name" className={formInputStyle} required />
                   </div>
 
                   <div className='flex flex-col justify-center items-start md:w-[75%] sm:w-[85%] w-[85%] my-[15px] mx-auto'>
                       <label htmlFor="email" className='text-[#484848] text-[15px] font-semibold mb-[5px]'>Your Email: <span className='text-[red]'>*</span></label>
-                      <input type="email" name='email' placeholder="example@gmail.com" className={formInputStyle} />
+                      <input type="email" name='email' placeholder="example@gmail.com" className={formInputStyle} required/>
                   </div>
 
                   <div className='flex flex-col justify-center items-start md:w-[75%] sm:w-[85%] w-[85%] my-[15px] mx-auto'>
                       <label htmlFor="phone" className='text-[#484848] text-[15px] font-semibold mb-[5px]'>Your Phone Number: <span className='text-[red]'>*</span></label>
-                      <input type="tel" name='phone' placeholder="Phone Number" className={formInputStyle} />
+                      <input type="tel" name='phone' placeholder="Phone Number" className={formInputStyle} required/>
                   </div>
 
                   <div className='flex flex-col justify-center items-start md:w-[75%] sm:w-[85%] w-[85%] my-[15px] mx-auto'>
                       <label htmlFor="subject" className='text-[#484848] text-[15px] font-semibold mb-[5px]'>Subject: <span className='text-[red]'>*</span></label>
-                      <input type="tel" name='subject' placeholder="Subject" className={formInputStyle} />
+                      <input type="tel" name='subject' placeholder="Subject" className={formInputStyle} required/>
                   </div>
 
 
                   <div className='flex flex-col justify-center items-start md:w-[75%] sm:w-[85%] w-[85%] my-[15px] mx-auto'>
                     <label htmlFor="msg" className='text-[#484848] text-[15px] font-semibold mb-[5px]'>Your Message: <span className='text-[red]'>*</span></label>
-                    <textarea name='msg' placeholder="Message" className={`${formInputStyle} resize-none h-[8em]`} />
+                    <textarea name='msg' placeholder="Message" className={`${formInputStyle} resize-none h-[8em]`} required/>
                   </div>
 
-                  <button className='bg-accent-color hover:bg-accent-hover py-[10px] px-[15px] text-primary-color font-semibold rounded-md my-[10px] md:w-[75%] sm:w-[85%] w-[85%]'>Book Call</button>
+                  <button className='bg-accent-color hover:bg-accent-hover py-[10px] px-[15px] text-primary-color font-semibold rounded-md my-[10px] md:w-[75%] sm:w-[85%] w-[85%]'>Send Message</button>
 
                 </form>
                 <p className='text-center text-[#3f3f3f] text-[13px] font-semibold w-[65%] mx-auto'>Our Company doesn't sell or share any customer information. Your Privacy is important to us.</p>
