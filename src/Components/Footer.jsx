@@ -1,4 +1,5 @@
 import React from 'react'
+import toast from 'react-hot-toast'
 
 //Image Imports
 import footerImage from '../assets/img/general/footer/footerImage.svg'
@@ -17,6 +18,11 @@ import { Link } from 'react-router-dom'
 
 const Footer = ({bookCallRef, buttonVisible = true}) => {
 
+    const subscribeHandler = (e) => {
+        e.preventDefault();
+        toast.error('This feature is not available yet!');
+    }
+         
 
     const scrollToElement = (ref) => {
         ref.current?.scrollIntoView({behavior: 'smooth'});
@@ -26,7 +32,7 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
     <div className='footer'>
 
         <div className="flex sm:flex-row flex-col justify-evenly items-center px-4">
-            <form className='lg:w-[50%] md:w-[50%] sm:w-[45%] w-[80%] max-w-[40em]'>
+            <form onSubmit={subscribeHandler} className='lg:w-[50%] md:w-[50%] sm:w-[45%] w-[80%] max-w-[40em]'>
                 <h2 className='lg:text-[30px] md:text-[26px] sm:text-[22px] text-[18px] font-bold lg:w-[70%] md:w-[85%] sm:w-[85%] w-[90%] my-[20px]'>SUBSCRIBE TO OUR NEWSLETTER !</h2>
                 <div className="flex justify-end items-center border-b-[2px] lg:w-[85%] md:w-[90%] sm:w-[90%] w-[100%] my-[60px]">
                     <input type="email" placeholder='Your Email' className='bg-[transparent] w-[88%] py-[10px] px-[15px] outline-none' required/>
