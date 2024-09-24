@@ -4,6 +4,8 @@ import uiDesign from '../../assets/img/services/uiDesign.jpg';
 import brandDesign from '../../assets/img/services/brandDesign.jpg';
 import printDesign from '../../assets/img/services/printDesign.jpg';
 import merchDesigns from '../../assets/img/services/merchDesigns.jpg';
+import webDesign from '../../assets/img/services/webDesign.jpg';
+import videoEditing from '../../assets/img/services/videoEditing.jpg';
 
 
 const serviceData = [
@@ -68,7 +70,7 @@ Our secret? Blending creativity with style, so your merch stands out and becomes
     description: `At Fourcape, we don’t just build websites—we craft digital experiences that captivate and convert. 🌟 Whether you need a sleek portfolio site, an e-commerce powerhouse, or a dynamic web app, we design and develop websites that are as functional as they are stunning. 🎨💡
 
 Our approach? We blend creativity with cutting-edge technology to create sites that not only look amazing but also work flawlessly on every device. 📱💻 From smooth navigation to pixel-perfect visuals, we’ll make sure your website is fast, responsive, and totally on-brand. 🚀🔗 Let’s build a web presence that your audience won’t forget—one click at a time!`,
-    image: 'https://via.placeholder.com/300',
+    image: webDesign,
     altText: 'Service 6',
     price: 'Starting at $500',
     offers: ['Offer 1', 'Offer 2', 'Offer 3'],
@@ -79,7 +81,7 @@ Our approach? We blend creativity with cutting-edge technology to create sites t
     description: `At Fourcape, we bring your brand to life with Motion Graphics and Video Editing that captivate and inspire! 🎥 Whether it’s an animated logo that wows, a product demo that dazzles, or a full-blown promotional video, we craft visuals that tell your story in motion. 💡🎞️
 
 Our team mixes creativity with precision, making sure every frame counts. From slick transitions to vibrant animations, we’ll turn your ideas into dynamic content that grabs attention and leaves a lasting impact. 🚀💥 Let’s make your brand move in all the right ways—one stunning visual at a time! 🎯🎨`,
-    image: 'https://via.placeholder.com/300',
+    image: videoEditing,
     altText: 'Service 7',
     price: 'Starting at $500',
     offers: ['Offer 1', 'Offer 2', 'Offer 3'],
