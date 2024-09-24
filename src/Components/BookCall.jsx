@@ -16,8 +16,8 @@ const BookCall = ({bookCallRef}) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_hie89ok', 'template_h9a62h8', form.current, {
-        publicKey: 'ATz80OS2k1g-1j7Vh',
+      .sendForm(import.meta.env.VITE_EMAIL_SERVICE_ID, import.meta.env.VITE_EMAIL_TEMPLATE_BOOK_CALL, form.current, {
+        publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY,
       })
       .then(
         () => {

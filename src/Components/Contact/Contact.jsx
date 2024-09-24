@@ -22,9 +22,14 @@ const Contact = () => {
   const contactHandler = (e) => {
     e.preventDefault();
 
+    console.log(import.meta.env.VITE_EMAIL_SERVICE_ID)
+    console.log(import.meta.env.VITE_EMAIL_TEMPLATE_BOOK_CALL)
+    console.log(import.meta.env.VITE_EMAIL_TEMPLATE_CONTACT)
+    console.log(import.meta.env.VITE_EMAIL_PUBLIC_KEY)
+
     emailjs
-      .sendForm('service_hie89ok', 'template_tavsp8l', contactForm.current, {
-        publicKey: 'ATz80OS2k1g-1j7Vh',
+      .sendForm(import.meta.env.VITE_EMAIL_SERVICE_ID, import.meta.env.VITE_EMAIL_TEMPLATE_CONTACT, contactForm.current, {
+        publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY,
       })
       .then(
         () => {
