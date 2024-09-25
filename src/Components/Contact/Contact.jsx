@@ -51,7 +51,7 @@ const Contact = () => {
           <OverlayText className="absolute top-0 lg:left-10 md:left-7 sm:left-5 left-3 z-[0] text-[14vw] max-[1250px]:text-[16vw]" text="Contact Us" />
           <div className='relative lg:pt-[15em] md:pt-[7em] sm:pt-[7em] pt-[5em] pb-[3em]'>
             <h4 className='text-accent-color font-bold font-primary text-[20px] my-[10px] text-center'>Have a Question ?</h4>
-            <p className='font-primary sm:text-[15px] text-[12px] md:w-[45%] sm:w-[70%] w-[85%] my-[20px] mx-auto text-center'>Thank you for your interest in our services. Please fill out the form below or E-Mail us at <Link to="" className="text-accent-color hover:underline font-semibold">fourcape@gmail.com</Link> and we will get to you promptly regarding your request.</p>
+            <p className='font-primary sm:text-[15px] text-[12px] md:w-[45%] sm:w-[70%] w-[85%] my-[20px] mx-auto text-center'>Thank you for your interest in our services. Please fill out the form below or E-Mail us at <Link to="mailto: fourcape@gmail.com" className="text-accent-color hover:underline font-semibold">fourcape@gmail.com</Link> and we will get to you promptly regarding your request.</p>
 
             <div className='flex lg:flex-row flex-col-reverse justify-center items-center'>
 
@@ -64,14 +64,16 @@ const Contact = () => {
                   <h3 className='text-[25px] font-semibold'>GET IN TOUCH:</h3>
 
                   <ul className='flex flex-col justify-start items-start pl-[20px] py-[15px]'>
+                      {/*
                       <li className='my-[10px]'>
                           <Link to="/" className='flex justify-center items-center my-[10px]'>
                             <img src={callIcon} className='mr-[10px]' alt="" />
                             <span>+91 88990 60179</span>
                           </Link>
                       </li>
+                      */}
                       <li className='my-[10px]'>
-                        <Link to="/" className='flex justify-center items-center' >
+                        <Link to="mailto: fourcape@gmail.com" className='flex justify-center items-center' >
                           <img src={emailIcon} className='mr-[10px]' alt="" />
                           <span>fourcape@gmail.com</span>
                         </Link>

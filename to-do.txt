@@ -1,13 +1,18 @@
 -------------- Primary ---------------
 
-> Improving services Page
 > Updating all Links (Third Party and local links)
+> Fix Contact Page
 > Adding Actual Content
 > Fix Footer & its quick links
-> Add Animations
+> Cloudinary to host images
+> OG Tags
+> Favicon
+> Keywords, Description, Title
+> SEO
 
 -------------- Secondary ---------------
 
+> Add Animations
 > Add a svg explaining the CAPE
 > Showing Active Page on Nav Menu
 > Showing Active Page on Mobile Nav Menu

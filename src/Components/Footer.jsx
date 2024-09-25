@@ -56,14 +56,16 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
                 <h3 className='text-[25px] sm:text-left text-center font-bold'>REACH US AT:</h3>
 
                 <ul className='flex flex-col justify-center items-start pl-[20px] py-[15px]'>
+                    {/* 
                     <li>
                         <Link to="/" className='flex justify-center items-center my-[10px]'>
                             <img src={callIcon} className='mr-[10px]' alt="" />
                             <span>+ 91 88990 60179</span>
                         </Link>
                     </li>
+                    */}
                     <li>
-                        <Link to="/" className='flex justify-center items-center my-[10px]'>
+                        <Link to="mailto: fourcape@gmail.com" className='flex justify-center items-center my-[10px]'>
                             <img src={emailIcon} className='mr-[10px]' alt="" />
                             <span>fourcape@gmail.com</span>
                         </Link>
@@ -77,14 +79,15 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
                 <h3 className='text-[25px] font-bold'>CONNECT WITH US:</h3>
 
                 <div className='flex justify-center items-center my-[4em]'>
-                    <Link to="/" className='mx-[25px]'>
+                    <Link to="https://www.linkedin.com/company/four-cape/" className='mx-[25px]'>
                         <img src={linkedinIcon} alt="LinkedIn" />
                     </Link>
                     
-                    <Link to="/" className='mx-[25px]'>
+                    <Link to="https://www.instagram.com/four.cape/" className='mx-[25px]'>
                         <img src={instagramIcon} alt="Instagram" />
                     </Link>
 
+                    {/*
                     <Link to="/" className='mx-[25px]'>
                         <img src={facebookIcon} alt="Facebook" />
                     </Link>
@@ -92,6 +95,7 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
                     <Link to="/" className='mx-[25px]'>
                         <img src={youtubeIcon} alt="Youtube" />
                     </Link>
+                    */}
                 </div>
             
             </div>
@@ -106,17 +110,17 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
                     <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>Home</Link>
                 </li>
                 <li className='my-[20px] mx-[35px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>About Us</Link>
+                    <Link to='/about' className='hover:text-accent-color md:text-[17px] text-[13px]'>About Us</Link>
                 </li>
             </ul>
             
             <ul className='flex flex-col justify-center sm:items-start items-center'>
                 <li className='my-[20px] mx-[35px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>Our Service</Link>
+                    <Link to='/services' className='hover:text-accent-color md:text-[17px] text-[13px]'>Our Service</Link>
                 </li>
 
                 <li className='my-[20px] mx-[35px] font-semibold'>
-                    <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>Contact Us</Link>
+                    <Link to='/contact' className='hover:text-accent-color md:text-[17px] text-[13px]'>Contact Us</Link>
                 </li>
             </ul>
             
