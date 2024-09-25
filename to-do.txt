@@ -1,7 +1,5 @@
 -------------- Primary ---------------
 
-> Updating all Links (Third Party and local links)
-> Fix Contact Page
 > Adding Actual Content
 > Fix Footer & its quick links
 > Cloudinary to host images

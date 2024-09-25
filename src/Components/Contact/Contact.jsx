@@ -9,8 +9,10 @@ import BookCall from '../BookCall'
 import OverlayText from '../Elements/OverlayText'
 
 import ContactImg from '../../assets/img/Contact/ContactPage.svg'
-import callIcon from '../../assets/img/general/footer/CallIcon.svg'
+//import callIcon from '../../assets/img/general/footer/CallIcon.svg'
 import emailIcon from '../../assets/img/general/footer/EmailIcon.svg'
+import linkedinIcon from '../../assets/img/general/footer/LinkedinIcon.svg'
+import instagramIcon from '../../assets/img/general/footer/instagramIcon.svg'
 
 const Contact = () => {
 
@@ -78,6 +80,18 @@ const Contact = () => {
                           <span>fourcape@gmail.com</span>
                         </Link>
                       
+                      </li>
+                      <li>
+                        <Link to="https://www.linkedin.com/company/four-cape/" className='flex justify-center items-center ml-[3px] my-[10px]'>
+                          <img src={linkedinIcon} className='mr-[10px]' alt="" />
+                          <span>LinkedIn</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="https://www.instagram.com/four.cape/" className='flex justify-center items-center my-[10px]'>
+                          <img src={instagramIcon} className='mr-[10px]' alt="" />
+                          <span>Instagram</span>
+                        </Link>
                       </li>
                   </ul>
 
