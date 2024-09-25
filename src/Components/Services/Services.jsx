@@ -20,9 +20,7 @@ const Services = () => {
           <p className='font-primary text-[15px] w-[45%] my-[20px] mx-auto text-center max-[950px]:w-[70%] max-[550px]:w-[90%] max-[550px]:text-[12px] text-[#6e6e6e]'>
             <b>Fourcape</b> is a full-service brand-building agency dedicated to driving business success through creative and strategic solutions. We believe in the power of well-crafted brands to transform markets and empower businesses to achieve their full potential. Our approach is rooted in our core philosophy, represented by <b> CAPE: Creating Path, Adapting Market, Promoting Brands, Empowering Businesses </b>.
 
-With a focus on design excellence, market insight, and brand strategy, our team works collaboratively to deliver innovative solutions tailored to the unique needs of each client. Whether it’s brand development, market positioning, or visual identity, Fourcape is committed to guiding your business on the path to success in an ever-evolving marketplace.
-
-At Fourcape, we are not just building brands—we are building futures.
+At Fourcape, we make brands pop! Whether you need a bold new logo, a fresh brand strategy, or a total design makeover, we’ve got the skills to bring your vision to life. Let’s create something awesome together and take your brand to the next level!
           </p>
         </div>
       </section>
