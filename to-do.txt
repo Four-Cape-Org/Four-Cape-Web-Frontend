@@ -1,7 +1,7 @@
 -------------- Primary ---------------
 
 > Adding Actual Content
-> Fix Footer & its quick links
+> Check and fix responsiveness for all pages
 > Cloudinary to host images
 > OG Tags
 > Favicon
