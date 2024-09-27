@@ -4,12 +4,13 @@ import BubbleButtonPrimary from '../Elements/BubbleButtonPrimary'
 import BubbleButtonSecondary from '../Elements/BubbleButtonSecondary'
 
 // Images
-import CardImg1 from '../../assets/img/general/serviceCards/service_card_1.jpeg'
-import SocialContentImg from "../../assets/img/services/socialContent.jpg"
-import UIDesignImg from "../../assets/img/services/uiDesign.jpg"
-import BrandDesignImg from "../../assets/img/services/brandDesign.jpg"
-import PrintDesignImg from "../../assets/img/services/printDesign.jpg"
-import MerchDesignImg from "../../assets/img/services/merchDesigns.jpg"
+
+const SocialContentImg = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437343/socialContent.jpg';
+const UIDesignImg = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437343/uiDesign.jpg';
+const BrandDesignImg = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437343/brandDesign.jpg';
+const PrintDesignImg = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437347/printDesign.jpg';
+const MerchDesignImg = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437347/merchDesigns.jpg';
+
 
 const ServiceSection = () => {
   return (

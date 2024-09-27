@@ -2,7 +2,7 @@ import React, {useRef} from 'react'
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 
-import BookCallImg from '../assets/img/home/bookCall.svg'
+const BookCallImg = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449267/general/bookCall.svg'
 
 const BookCall = ({bookCallRef}) => {
 

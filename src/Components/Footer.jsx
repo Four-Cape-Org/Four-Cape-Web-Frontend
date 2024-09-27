@@ -2,17 +2,17 @@ import React from 'react'
 import toast from 'react-hot-toast'
 
 //Image Imports
-import footerImage from '../assets/img/general/footer/footerImage.svg'
-import Logo from '../assets/img/prime/FourCapePink.png'
+const footerImage = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449867/general/footer/footerSvg.svg'
+const Logo = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727445927/prime/pinkLogo.png'
 
 // Icon Imports
-import sendIcon from '../assets/img/general/footer/sendIconNewsletter.svg'
-import callIcon from '../assets/img/general/footer/CallIcon.svg'
-import emailIcon from '../assets/img/general/footer/EmailIcon.svg'
-import facebookIcon from '../assets/img/general/footer/FacebookIcon.svg'
-import instagramIcon from '../assets/img/general/footer/instagramIcon.svg'
-import linkedinIcon from '../assets/img/general/footer/LinkedinIcon.svg'
-import youtubeIcon from '../assets/img/general/footer/YoutubeIcon.svg'
+const sendIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449822/general/footer/sendIcon.svg'
+//import callIcon from 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449868/general/footer/callIcon.svg'
+const emailIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449868/general/footer/emailIcon.svg'
+//import facebookIcon from 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449867/general/footer/facebookIcon.svg'
+const instagramIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449866/general/footer/instaIcon.svg'
+const linkedinIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449822/general/footer/linkedinIcon.svg'
+//import youtubeIcon from 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449821/general/footer/ytIcon.svg'
 import { Link } from 'react-router-dom'
 
 

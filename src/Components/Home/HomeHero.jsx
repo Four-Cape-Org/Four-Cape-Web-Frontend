@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import BubbleButtonPrimary from '../Elements/BubbleButtonPrimary'
 
 // Image imports
-import HeroImg from '../../assets/img/home/home_hero_vector_1.svg'
+const HeroImg = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727448038/home/homeHeroSvg.svg'
 
 const HomeHero = () => {
   return (

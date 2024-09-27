@@ -8,11 +8,11 @@ import Footer from '../Footer'
 import BookCall from '../BookCall'
 import OverlayText from '../Elements/OverlayText'
 
-import ContactImg from '../../assets/img/Contact/ContactPage.svg'
-//import callIcon from '../../assets/img/general/footer/CallIcon.svg'
-import emailIcon from '../../assets/img/general/footer/EmailIcon.svg'
-import linkedinIcon from '../../assets/img/general/footer/LinkedinIcon.svg'
-import instagramIcon from '../../assets/img/general/footer/instagramIcon.svg'
+const ContactImg = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727450718/contact/contactSvg.svg';
+//import callIcon from 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449868/general/footer/callIcon.svg'
+const emailIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449868/general/footer/emailIcon.svg';
+const instagramIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449866/general/footer/instaIcon.svg';
+const linkedinIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449822/general/footer/linkedinIcon.svg';
 
 const Contact = () => {
 

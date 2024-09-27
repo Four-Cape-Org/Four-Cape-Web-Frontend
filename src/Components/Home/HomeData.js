@@ -1,4 +1,4 @@
-import avatar1 from '../../assets/img/home/Avatar.svg'
+const avatar1 = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727448037/home/avatar.svg'
 
 export const clientReviewsData = [{
     id: 1,

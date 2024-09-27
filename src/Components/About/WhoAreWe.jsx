@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Image imports
-import SetupImg from '../../assets/img/about/setupImg.jpg'
+//import SetupImg from '../../assets/img/about/setupImg.jpg'
 
 const WhoAreWe = () => {
   return (

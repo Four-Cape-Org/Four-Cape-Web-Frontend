@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import OverlayText from "../Elements/OverlayText";
-import PNFImage from "../../assets/img/pageNotFound.svg";
+
+const PNFImage = "https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437066/pageNotFound.svg";
 
 const PNF = () => {
   return (
@@ -18,7 +19,7 @@ const PNF = () => {
          
           
 
-          <img src={PNFImage} className="w-full md:w-3/4 lg:w-[40em] h-auto" alt="" />
+          <img src="https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437066/pageNotFound.svg" className="w-full md:w-3/4 lg:w-[40em] h-auto" alt="" />
           
           <h2 className="text-3xl md:text-5xl lg:text-[4.5em] text-accent-color font-semibold">Page Not Found</h2>
 

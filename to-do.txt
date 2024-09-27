@@ -1,7 +1,6 @@
 -------------- Primary ---------------
 
 > Adding Actual Content
-> Check and fix responsiveness for all pages
 > Cloudinary to host images
 > OG Tags
 > Favicon

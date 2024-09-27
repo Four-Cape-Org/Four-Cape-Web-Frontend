@@ -2,8 +2,8 @@ import React from "react";
 import OverlayText from "../Elements/OverlayText";
 import BubbleButtonSecondary from "../Elements/BubbleButtonSecondary";
 
-import AboutImg from "../../assets/img/home/about_img.jpg";
-import AdThumbnail from "../../assets/img/home/adThumbnail.jpeg";
+const AboutImg = "https://res.cloudinary.com/dlvmwou0e/image/upload/v1727448041/home/aboutImg.jpg";
+//const AdThumbnail = "https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449270/general/adThumbnail.jpg";
 
 const AboutSection = (props) => {
   return (

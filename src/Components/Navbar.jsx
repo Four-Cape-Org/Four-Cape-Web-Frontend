@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { NavLink, Link } from 'react-router-dom';
-import Logo from '../assets/img/prime/fourcapeLogoWhite.png';
+const Logo = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727445927/prime/whiteLogo.png';
 import NavAccordion from './NavAccordion';
 
 const Navbar = ({bookCallRef, buttonVisible = true}) => {
