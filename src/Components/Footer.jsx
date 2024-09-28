@@ -2,17 +2,17 @@ import React from 'react'
 import toast from 'react-hot-toast'
 
 //Image Imports
-import footerImage from '../assets/img/general/footer/footerImage.svg'
-import Logo from '../assets/img/prime/FourCapePink.png'
+const footerImage = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449867/general/footer/footerSvg.svg'
+const Logo = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727445927/prime/pinkLogo.png'
 
 // Icon Imports
-import sendIcon from '../assets/img/general/footer/sendIconNewsletter.svg'
-import callIcon from '../assets/img/general/footer/CallIcon.svg'
-import emailIcon from '../assets/img/general/footer/EmailIcon.svg'
-import facebookIcon from '../assets/img/general/footer/FacebookIcon.svg'
-import instagramIcon from '../assets/img/general/footer/instagramIcon.svg'
-import linkedinIcon from '../assets/img/general/footer/LinkedinIcon.svg'
-import youtubeIcon from '../assets/img/general/footer/YoutubeIcon.svg'
+const sendIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449822/general/footer/sendIcon.svg'
+//import callIcon from 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449868/general/footer/callIcon.svg'
+const emailIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449868/general/footer/emailIcon.svg'
+//import facebookIcon from 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449867/general/footer/facebookIcon.svg'
+const instagramIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449866/general/footer/instaIcon.svg'
+const linkedinIcon = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449822/general/footer/linkedinIcon.svg'
+//import youtubeIcon from 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449821/general/footer/ytIcon.svg'
 import { Link } from 'react-router-dom'
 
 
@@ -21,12 +21,13 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
     const subscribeHandler = (e) => {
         e.preventDefault();
         toast.error('This feature is not available yet!');
-    }
-         
+    }         
 
     const scrollToElement = (ref) => {
         ref.current?.scrollIntoView({behavior: 'smooth'});
-      };
+    };
+
+    const year = new Date().getFullYear();
 
   return (
     <div className='footer'>
@@ -48,7 +49,7 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
 
             <div className='flex flex-col justify-center sm:items-start items-center lg:w-[25%] md:w-[30%] sm:w-[35%] w-[85%] lg:mx-[6em] md:mx-[4em] sm:mx-[2em] my-[3.5em]'>
                 <img src={Logo} className='w-[14em] lg:mb-[40px] mb-[20px]' alt="FourCape" />
-                <p className='lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] sm:text-left text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium labore quidem ipsam porro fugit libero sunt omnis laboriosam expedita!</p>
+                <p className='lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px] sm:text-left text-center'>Thanks for stopping by! At Fourcape, we're all about creating, inspiring, and having fun while doing it. Got a project in mind? Let’s chat and make magic happen! ✨ Your brand’s next big move starts here.</p>
             </div>
 
             <div className="lg:mx-[5em] md:mx-[3em] sm:mx-[2em] my-[3.5em]">
@@ -103,6 +104,7 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
         </div>
 
 
+        {/*
         <div className='flex flex-row justify-evenly items-center flex-wrap'>
 
             <ul className='flex flex-col justify-center sm:items-start items-center'>
@@ -144,8 +146,28 @@ const Footer = ({bookCallRef, buttonVisible = true}) => {
             </ul>
 
         </div>
+        */}
 
-        <p className='text-center py-[4em] md:text-[18px] text-[15px] font-semibold'>All Rights Reserved © since 2023 | <span className='text-accent-color'>FourCape</span></p>
+
+        <ul className='flex flex-row justify-evenly items-center flex-wrap'>
+          
+          <li className="my-[20px] mx-[35px] font-semibold">
+            <Link to='/' className='hover:text-accent-color md:text-[17px] text-[13px]'>Home</Link>
+          </li> 
+          <li className="my-[20px] mx-[35px] font-semibold">
+            <Link to='/about' className='hover:text-accent-color md:text-[17px] text-[13px]'>About Us</Link>
+          </li>
+          <li className="my-[20px] mx-[35px] font-semibold">
+            <Link to='/services' className='hover:text-accent-color md:text-[17px] text-[13px]'>Our Service</Link>
+          </li>
+          <li className="my-[20px] mx-[35px] font-semibold">
+            <Link to='/contact' className='hover:text-accent-color md:text-[17px] text-[13px]'>Contact Us</Link>
+          </li>
+
+        </ul>
+
+
+        <p className='text-center py-[4em] md:text-[18px] text-[15px] font-semibold'>All Rights Reserved © since {year} | <span className='text-accent-color'>FourCape</span></p>
 
     </div>
   )

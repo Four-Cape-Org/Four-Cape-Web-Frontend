@@ -1,11 +1,11 @@
 
-import socialContent from '../../assets/img/services/socialContent.jpg';
-import uiDesign from '../../assets/img/services/uiDesign.jpg';
-import brandDesign from '../../assets/img/services/brandDesign.jpg';
-import printDesign from '../../assets/img/services/printDesign.jpg';
-import merchDesigns from '../../assets/img/services/merchDesigns.jpg';
-import webDesign from '../../assets/img/services/webDesign.jpg';
-import videoEditing from '../../assets/img/services/videoEditing.jpg';
+const socialContent = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437343/socialContent.jpg';
+const uiDesign = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437343/uiDesign.jpg';
+const brandDesign = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437343/brandDesign.jpg';
+const printDesign = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437347/printDesign.jpg';
+const merchDesigns = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437347/merchDesigns.jpg';
+const webDesign = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437344/webDesign.jpg';
+const videoEditing = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727437345/videoEditing.jpg';
 
 
 const serviceData = [

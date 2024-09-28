@@ -1,13 +1,6 @@
 -------------- Primary ---------------
 
-> Adding Actual Content
-> Fix Footer & its quick links
-> Cloudinary to host images
-> OG Tags
-> Favicon
-> Keywords, Description, Title
-> SEO
-
+> Add Site URL
 -------------- Secondary ---------------
 
 > Add Animations

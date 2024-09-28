@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Arrow from '../../assets/img/general/JumboButtonArrow.svg'
+const Arrow = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449551/general/jumboArrow.svg'
 
 const JumboButton = (props) => {
   return (

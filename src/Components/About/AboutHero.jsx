@@ -1,7 +1,7 @@
 import BubbleButtonPrimary from "../Elements/BubbleButtonPrimary"
 
 // Image imports
-import AboutHeroImg from '../../assets/img/about/AboutHero.png'
+const AboutHeroImg = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727452195/about/aboutBlobImage.png'
 
 
 const AboutHero = () => {

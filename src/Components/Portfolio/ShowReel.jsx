@@ -1,5 +1,5 @@
 import React from 'react'
-import AdThumbnail from '../../assets/img/home/adThumbnail.jpeg'
+//const AdThumbnail = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727449270/general/adThumbnail.jpg'
 
 const ShowReel = () => {
   return (

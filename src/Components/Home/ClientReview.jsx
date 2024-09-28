@@ -2,7 +2,7 @@ import React from 'react'
 
 import { clientReviewsData } from './HomeData'
 
-import DoubleEndQuote from '../../assets/img/home/Double_End_Quote.svg'
+const DoubleEndQuote = 'https://res.cloudinary.com/dlvmwou0e/image/upload/v1727448037/home/doubleQuotes.svg'
 
 const ClientReview = () => {
   return (

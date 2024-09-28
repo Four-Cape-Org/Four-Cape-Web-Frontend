@@ -16,9 +16,11 @@ const NavAccordion = ({navAccordionState, setNavAccordionState, handleNavAccordi
             <li className='border-[1px] border-[white] w-[100%]'>
                 <Link to="/" onClick={setAccordionState} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/">Home</Link>
             </li>
+            {/*
             <li  className='border-[1px] border-[white] w-[100%]'>
                 <Link to="/portfolio" onClick={setAccordionState} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/work">Our Work</Link>
             </li>
+            */}
             <li  className='border-[1px] border-[white] w-[100%]'>
                 <Link to="/about" onClick={setAccordionState} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/about">About Us</Link>
             </li>
