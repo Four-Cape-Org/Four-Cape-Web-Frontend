@@ -1,7 +1,6 @@
 -------------- Primary ---------------
 
 > Adding Actual Content
-> Cloudinary to host images
 > OG Tags
 > Favicon
 > Keywords, Description, Title
