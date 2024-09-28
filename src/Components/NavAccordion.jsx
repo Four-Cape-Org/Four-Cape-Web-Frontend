@@ -31,10 +31,10 @@ const NavAccordion = ({navAccordionState, setNavAccordionState, handleNavAccordi
                 <Link to="/contact" onClick={setAccordionState} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/contact">Contact</Link>
             </li>
             <li  className='border-[1px] border-[white] w-[100%]'>
-                <Link onClick={() => {
+                <button onClick={() => {
                     scrollToElement(bookCallRef);
                     handleNavAccordion();
-                }} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/contact">Book a call</Link>
+                }} className="block py-[10px] px-[15px] text-[15px] font-primary hover:text-accent-color transition-all duration-500" href="/contact">Book a call</button>
             </li>
         </ul>
     </div>
