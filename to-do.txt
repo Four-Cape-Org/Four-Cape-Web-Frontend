@@ -1,11 +1,6 @@
 -------------- Primary ---------------
 
-> Adding Actual Content
-> OG Tags
-> Favicon
-> Keywords, Description, Title
-> SEO
-
+> Add Site URL
 -------------- Secondary ---------------
 
 > Add Animations
